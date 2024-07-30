@@ -1,0 +1,94 @@
+.header {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  & p {
+    color: #353535;
+    text-align: center;
+    font-family: Onest;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .icon {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.main_section {
+  width: 96%;
+  margin: 0 auto;
+
+  & h6 {
+    color: #000;
+    font-family: Onest;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .checked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 70vh;
+
+    & h6 {
+      margin: 0;
+      color: #000;
+      font-family: Onest;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    & span {
+      color: #898989;
+      font-family: Onest;
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+  }
+
+  .img_sec {
+    width: 137px;
+    height: 137px;
+    border-radius: 50%;
+    background: #d61c4e;
+  }
+
+  .btn_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    & button {
+      margin: 0;
+      display: flex;
+      width: 95%;
+      height: 45px;
+      justify-content: center;
+      align-items: center;
+      gap: 9.112px;
+      border-radius: 9px;
+      background: #d61c4e;
+      color: #fff;
+      font-family: Onest;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: none;
+    }
+
+    & a {
+      color: #000;
+      text-decoration: none;
+      font-family: Onest;
+      font-size: 0.97rem;
+      font-weight: 400;
+    }
+  }
+}

@@ -1,0 +1,197 @@
+.main_section {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+
+  .child_section {
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+
+    & h6 {
+      color: #353535;
+      text-align: center;
+      font-family: Onest;
+      font-size: 1.5rem;
+      font-weight: 600;
+      position: relative;
+    }
+
+    & img {
+      display: block;
+      position: absolute;
+      top: 4%;
+      right: 494px;
+    }
+
+    .btn_section {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 0 20px;
+    }
+
+    & button {
+      width: 340px;
+      padding: 10px;
+      height: 55px;
+      border: none;
+      gap: 10px;
+      border-radius: 30px;
+      background: #d61c4e;
+      color: #fff;
+      text-align: center;
+      font-family: Onest;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    & a {
+      color: #1877f2;
+      font-family: Onest;
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+
+    & span {
+      cursor: pointer;
+      color: #1877f2;
+      font-family: Onest;
+      font-size: 0.8rem;
+      font-weight: 400;
+      text-decoration-line: underline;
+    }
+
+    & p {
+      color: #000;
+      text-align: center;
+      font-family: Onest;
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+  }
+}
+
+/* --------password-field-------------- */
+
+.otp_input_container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  & input {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 9px;
+    border: 0.661px solid #d9d9d9;
+    background: #fff;
+  }
+
+  & label {
+    color: #464646;
+    text-align: center;
+    font-family: Inter;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}
+
+/* --------media-queries-------- */
+
+@media screen and (max-width: 568px) {
+  .main_section {
+    flex-direction: column;
+
+    .child_section {
+      margin-top: 20px;
+
+
+      & h6 {
+        position: relative;
+      }
+
+      & img {
+        display: block;
+        position: absolute;
+        top: 72%;
+        left: 59%;
+      }
+
+      .btn_section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0 20px;
+      }
+
+      & button {
+        width: auto;
+        padding: 10px;
+        height: 55px;
+        border: none;
+        gap: 10px;
+        border-radius: 30px;
+        background: #d61c4e;
+        color: #fff;
+        text-align: center;
+        font-family: Onest;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      & a {
+        text-align: center;
+      }
+
+      & span {
+        cursor: pointer;
+        color: #1877f2;
+        font-family: Onest;
+        font-size: 0.8rem;
+        font-weight: 400;
+        text-decoration-line: underline;
+      }
+
+      & p {
+        color: #000;
+        text-align: center;
+        font-family: Onest;
+        font-size: 0.8rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .otp_input_container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    & input {
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+      text-align: center;
+      font-size: 1rem;
+      border-radius: 9px;
+      border: 0.661px solid #d9d9d9;
+      background: #fff;
+    }
+
+    & label {
+      color: #464646;
+      text-align: center;
+      font-family: Inter;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+}

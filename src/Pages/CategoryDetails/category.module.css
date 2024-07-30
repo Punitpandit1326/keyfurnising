@@ -1,0 +1,546 @@
+.header {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  & p {
+    color: #353535;
+    text-align: center;
+    font-family: Onest;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .icon {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.head_section {
+  margin: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+
+  & h6 {
+    color: #000;
+    font-family: Onest;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+}
+
+.child_img {
+  display: flex;
+  gap: 15px;
+
+  & img {
+    width: 30px;
+    height: auto;
+  }
+}
+
+.slider_section {
+  position: relative;
+  margin: 20px 0;
+  padding: 10px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+
+  .left_arr {
+    position: absolute;
+    top: 39%;
+    left: 10%;
+    font-size: 2rem;
+  }
+
+  .right_arr {
+    position: absolute;
+    top: 39%;
+    right: 10%;
+    font-size: 2rem;
+  }
+}
+
+.des_section {
+  margin: 10px;
+
+  & h6 {
+    color: #000;
+    font-family: Onest;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  & p {
+    color: #000;
+    font-family: Onest;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  & span {
+    color: #b2b2b2;
+    font-family: Onest;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: line-through;
+  }
+
+  .offer {
+    display: flex;
+    width: 49px;
+    height: 21px;
+    padding: 6px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: #d1ffc7;
+    color: #55b440;
+    font-family: Onest;
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+
+  .rating_section {
+    display: flex;
+    padding: 0 8px;
+    align-items: center;
+    gap: 3px;
+    border-radius: 7px;
+
+    & p {
+      margin: 0;
+      color: #000;
+      font-size: 0.9rem;
+      font-family: Onest;
+      font-weight: 500;
+    }
+  }
+}
+
+.variant_section {
+  margin: 20px 10px 10px;
+
+  & p {
+    margin: 10px 0;
+    color: #000;
+    font-family: Onest;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .color {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #f9f9f9;
+  }
+
+  & span {
+    color: #959595;
+    font-family: Onest;
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+
+  & h6 {
+    margin: 10px 0;
+    color: #00b55b;
+    font-family: Onest;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .coupon_section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    & p {
+      margin: 10px 0;
+      color: #000;
+      font-family: Onest;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.specification {
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+
+  & h6 {
+    color: #050505;
+    font-family: Onest;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  & p {
+    color: #a7a7a7;
+    font-family: Onest;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  & ul {
+    padding-left: 15px;
+  }
+
+  & li {
+    color: #a7a7a7;
+    font-family: Onest;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}
+
+.review_section {
+  margin: 10px 20px;
+
+  .main_review {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & h6 {
+    color: #050505;
+    font-family: Onest;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .left {
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-right: 1px solid #000;
+
+    & h1 {
+      margin: 0;
+      color: #050505;
+      font-family: Onest;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    & p {
+      color: #000;
+      font-family: Onest;
+      font-size: 0.7rem;
+      font-weight: 400;
+    }
+  }
+
+  .right {
+    width: 100%;
+    margin: 10px 15px;
+    & p {
+      margin: 0;
+      color: #050505;
+      font-family: Onest;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    & span {
+      padding-top: 5px;
+      color: #898989;
+      text-align: center;
+      font-family: Onest;
+      font-size: 0.7rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.fab_section {
+  margin: 10px 15px;
+
+  & h6 {
+    padding-top: 7px;
+    color: #d61c4e;
+    font-family: Onest;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  & h5 {
+    padding: 10px 0;
+    color: #000;
+    font-family: Onest;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  & P {
+    color: #000;
+    font-family: Onest;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  & span {
+    color: #d61c4e;
+    font-family: Onest;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration-line: underline;
+  }
+}
+
+.mat_sec {
+  display: flex;
+  gap: 10px;
+
+  & img {
+    width: 45x;
+    height: 45px;
+  }
+}
+
+.verfied_sec {
+  margin-top: 5px;
+  display: flex;
+  width: 80px;
+  height: 30px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border-radius: 5px;
+  background: #eee;
+  color: #9d9d9d;
+  font-family: Inter;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.rev_section {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  & p {
+    margin: 10px 0;
+    color: #000;
+    font-family: Onest;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}
+
+.product_sec {
+  margin: 20px 20px 10px;
+  display: flex;
+  justify-content: space-between;
+
+  & p {
+    color: #000;
+    font-family: Onest;
+    font-size: 0.97rem;
+    font-weight: 600;
+  }
+
+  & a {
+    color: #d61c4e;
+    font-family: Onest;
+    font-size: 0, 97rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+
+.main_card_section {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  width: 96%;
+}
+
+.card_section {
+  & h6 {
+    padding-top: 10px;
+    color: #000;
+    font-family: Onest;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  & p {
+    color: #000;
+    font-family: Onest;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  & span {
+    color: #b2b2b2;
+    font-family: Onest;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: line-through;
+  }
+
+  .offer {
+    display: flex;
+    width: 49px;
+    height: 21px;
+    padding: 6px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: #d1ffc7;
+    color: #55b440;
+    font-family: Onest;
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+}
+
+.rating_section {
+  position: relative;
+  width: 78px;
+  bottom: 43%;
+  left: 5%;
+  display: flex;
+  padding: 7px 8px;
+  align-items: center;
+  gap: 3px;
+  border-radius: 7px;
+  background: #fff;
+
+  & p {
+    margin: 0;
+    color: #000;
+    font-size: 0.7rem;
+    font-family: Onest;
+    font-weight: 400;
+  }
+
+  & span {
+    color: #898989;
+    font-family: Onest;
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+}
+
+.card_section_2 {
+  & h6 {
+    padding-top: 10px;
+    color: #000;
+    font-family: Onest;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  & p {
+    color: #000;
+    font-family: Onest;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  & span {
+    color: #b2b2b2;
+    font-family: Onest;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: line-through;
+  }
+
+  .offer {
+    display: flex;
+    width: 49px;
+    height: 21px;
+    padding: 6px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: #d1ffc7;
+    color: #55b440;
+    font-family: Onest;
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+}
+
+.rating_section_2 {
+  position: relative;
+  width: 78px;
+  bottom: 43%;
+  left: 5%;
+  display: flex;
+  padding: 7px 8px;
+  align-items: center;
+  gap: 3px;
+  border-radius: 7px;
+  background: #fff;
+
+  & p {
+    margin: 0;
+    color: #000;
+    font-size: 0.7rem;
+    font-family: Onest;
+    font-weight: 400;
+  }
+
+  & span {
+    color: #898989;
+    font-family: Onest;
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+}
+
+/* --------btn-section------------ */
+
+.btn_section {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #d9d9d9;
+
+  & button {
+    margin: 15px;
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9.112px;
+    border: 1px solid #d61c4e;
+    background: #fff;
+    color: #d61c4e;
+    font-family: Onest;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+
+  & button:last-child {
+    margin: 15px;
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #d61c4e;
+    color: #fff;
+  }
+}
