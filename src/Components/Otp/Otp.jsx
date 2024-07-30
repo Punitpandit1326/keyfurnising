@@ -1,10 +1,14 @@
-import React, {useRef, useState} from "react";
+import React, { useRef, useState } from "react";
 import styles from "./otp.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Otp = () => {
   const inputRefs = [useRef(), useRef(), useRef(), useRef()];
   const [otp, setOtp] = useState(["", "", "", ""]);
 
+  const navigate = useNavigate();
+  const next = () => {
+    navigate(`/category`);
+  };
 
   const handleInputChange = (index, value) => {
     const newOtp = [...otp];
@@ -26,9 +30,7 @@ const Otp = () => {
         <div className={styles.child_section}>
           <img src="/images/key-2.png" alt="key" />
           <h6>Key Furnish ngs</h6>
-          <h6>
-          We’ve sent you a OTP code on your number 75030xxxxx
-          </h6>
+          <h6>We’ve sent you a OTP code on your number 75030xxxxx</h6>
           <div className={styles.btn_section}>
             <div className="form-group mb-4">
               <div className={styles.otp_input_container}>
@@ -47,7 +49,7 @@ const Otp = () => {
                 </div>
               </div>
             </div>
-            <button>Verify Otp</button>
+            <button onClick={next}>Verify Otp</button>
             <Link to={""}>Any Trouble with login ?</Link>
             <p>
               By signing up , you agree to our <span>Terms</span>. See how we
