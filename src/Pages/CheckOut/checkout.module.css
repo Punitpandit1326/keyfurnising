@@ -19,9 +19,10 @@
 
 .main_section {
   width: 96%;
-  margin: 0 auto 100px;
+  margin: 0 auto 50px;
 
   & h6 {
+    padding: 20px 0 0;
     color: #000;
     font-family: Onest;
     font-size: 1.1rem;
@@ -36,6 +37,7 @@
       font-family: Onest;
       font-size: 0.9rem;
       font-weight: 400;
+      margin: 0;
     }
 
     .cart {

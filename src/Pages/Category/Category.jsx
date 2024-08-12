@@ -6,32 +6,33 @@ import { IoFilterSharp } from "react-icons/io5";
 import { IoMdAlarm, IoIosWifi, IoMdBluetooth } from "react-icons/io";
 import { Col, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import Footer from "../../Components/Footer/Footer";
 
 const Category = () => {
-  const [time, setTime] = useState(new Date());
+  // const [time, setTime] = useState(new Date());
   const navigate = useNavigate();
 
   const handleClick = () => {
     navigate(`/category/categorydetails`);
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTime(new Date());
-    }, 1000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setTime(new Date());
+  //   }, 1000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
-  const formattedTime = time.toLocaleTimeString("en-US", {
-    hour: "2-digit",
-    minute: "2-digit",
-  });
-  
+  // const formattedTime = time.toLocaleTimeString("en-US", {
+  //   hour: "2-digit",
+  //   minute: "2-digit",
+  // });
+
   return (
     <React.Fragment>
       <div>
-        <div className={styles.header}>
+        {/* <div className={styles.header}>
           <p> {formattedTime}</p>
           <div className={styles.icon}>
             <IoMdAlarm />
@@ -40,10 +41,10 @@ const Category = () => {
             <FaSignal />
             <LuBatteryFull style={{ marginTop: "-3px" }} size={22} />
           </div>
-        </div>
+        </div> */}
 
         <div className={styles.head_section}>
-          <h6>Upholstery Furniture</h6>
+          <h6>Upholstery Furniture 1</h6>
           <div className={styles.filter}>
             {" "}
             <IoFilterSharp />
@@ -59,6 +60,7 @@ const Category = () => {
         <hr style={{ color: "#d9d9d9", height: "2px" }} />
 
         <div className="d-flex gap-3">
+          
           <div onClick={handleClick}>
             <div className={styles.card_section}>
               <img src="/images/sofa.png" alt="sofa" />
@@ -119,6 +121,25 @@ const Category = () => {
           </div>
 
           <div onClick={handleClick}>
+            <div className={styles.card_section_3}>
+              <img src="/images/sofa-4.png" alt="sofa" />
+              <h6>Modern Sofa : Frank Gehry wiggle Chair </h6>
+              <div className="d-flex gap-2">
+                <p>
+                  <span> ₹ 2999 </span>₹ 1999
+                </p>
+                <div className={styles.offer}>50%</div>
+              </div>
+            </div>
+            <div className={styles.rating_section_3}>
+              <img src="/images/star.png" alt="star" />
+              <p>
+                4.5 <span>(45)</span>
+              </p>
+            </div>
+          </div>
+
+          {/* <div onClick={handleClick}>
             <div className={styles.card_section_4}>
               <img src="/images/sofa-4.png" alt="sofa" />
               <h6>Modern Sofa : Frank Gehry wiggle Chair </h6>
@@ -135,38 +156,11 @@ const Category = () => {
                 4.5 <span>(45)</span>
               </p>
             </div>
-          </div>
-        </div>
-
-        <div className={styles.card_section}></div>
-      </div>
-
-      <div>
-        <hr style={{ color: "#d9d9d9d", height: "2px" }} />
-        <div className={`${styles.footer_bottom} ${styles.fixed_footer}`}>
-          <div>
-            <img src="/images/home.png" alt="home" />
-            <p>Home</p>
-          </div>
-          <div>
-            <img src="/images/search.png" alt="home" />
-            <p>Search</p>
-          </div>
-          <div>
-            <img src="/images/Heart.png" alt="home" />
-            <p>Wishlist</p>
-          </div>
-          <div>
-            <img src="/images/bag.png" alt="home" />
-            <p>Bag</p>
-          </div>
-
-          <div>
-            <img src="/images/profile.png" alt="home" />
-            <p>Profile</p>
-          </div>
+          </div> */}
         </div>
       </div>
+
+      <Footer />
     </React.Fragment>
   );
 };

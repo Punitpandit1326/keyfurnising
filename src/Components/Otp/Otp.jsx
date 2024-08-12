@@ -25,10 +25,10 @@ const Otp = () => {
   return (
     <React.Fragment>
       <div className={styles.main_section}>
-        <img src="/images/group_img.png" alt="key" />
+        <img height={370} src="/images/group_img.png" alt="key" />
 
         <div className={styles.child_section}>
-          <img src="/images/key-2.png" alt="key" />
+          {/* <img src="/images/key-2.png" alt="key" /> */}
           <h6>Key Furnish ngs</h6>
           <h6>We’ve sent you a OTP code on your number 75030xxxxx</h6>
           <div className={styles.btn_section}>

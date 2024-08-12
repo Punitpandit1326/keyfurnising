@@ -1,0 +1,91 @@
+.head_section {
+  margin: 20px 10px;
+
+  & h6 {
+    padding: 10px;
+    color: #000;
+    text-align: start;
+    font-family: Onest;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+}
+
+.user_section {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+
+  .user_icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background: #d9d9d9;
+    align-items: center;
+    border-radius: 50%;
+    color: #c2c2c2;
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+
+  & h6 {
+    color: #000;
+    font-family: Onest;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 0 5px 0;
+    margin: 0;
+  }
+
+  & p {
+    color: #898989;
+    font-family: Onest;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+}
+
+.bottom_section {
+  display: flex;
+  margin: 20px 0 0;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  & h6 {
+    font-family: Onest;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 0;
+  }
+
+  .section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    position: relative;
+
+    & p {
+      color: #000;
+      font-family: Onest;
+      font-size: 1rem;
+      padding-top: 5px;
+      font-weight: 300;
+    }
+  }
+
+  .icon {
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+
+  & h5 {
+    color: #d61c4e;
+    font-family: Onest;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration-line: underline;
+  }
+}

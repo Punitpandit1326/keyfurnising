@@ -1,0 +1,43 @@
+.active {
+  color: #d61cd6; /* Example active color */
+}
+
+.footer_bottom div img {
+  filter: grayscale(1);
+  transition: filter 0.3s;
+}
+
+.active img {
+  filter: none; /* Show the icon in full color */
+}
+
+/* -------footer-section------- */
+
+.fixed_footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer_bottom {
+  padding: 5px 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+
+  & p {
+    color: #706e6e;
+    text-align: center;
+    font-family: Inter;
+    font-size: 0.6rem;
+    font-weight: 400;
+  }
+
+  & img {
+    width: 20px;
+  }
+}

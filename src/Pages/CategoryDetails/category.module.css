@@ -18,9 +18,11 @@
 }
 
 .head_section {
-  margin: 10px 20px;
+  margin: 25px 0 0;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
 
   & h6 {
     color: #000;
@@ -30,19 +32,30 @@
   }
 }
 
+.head_fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .child_img {
   display: flex;
   gap: 15px;
 
   & img {
-    width: 30px;
-    height: auto;
+    width: 20px;
+    height: 20px;
   }
 }
 
 .slider_section {
   position: relative;
-  margin: 20px 0;
+  /* margin: 20px 0; */
   padding: 10px 0 20px;
   display: flex;
   flex-direction: column;
@@ -66,7 +79,7 @@
 }
 
 .des_section {
-  margin: 10px;
+  margin: 10px 0;
 
   & h6 {
     color: #000;
@@ -104,6 +117,7 @@
     font-family: Onest;
     font-size: 0.7rem;
     font-weight: 500;
+    margin-left: 10px;
   }
 
   .rating_section {
@@ -124,7 +138,7 @@
 }
 
 .variant_section {
-  margin: 20px 10px 10px;
+  margin: 20px 0 10px;
 
   & p {
     margin: 10px 0;
@@ -176,7 +190,7 @@
 }
 
 .specification {
-  margin: 10px 20px;
+  margin: 10px 0;
   display: flex;
   flex-direction: column;
 
@@ -207,7 +221,8 @@
 }
 
 .review_section {
-  margin: 10px 20px;
+  width: 100%;
+  margin: 10px 0;
 
   .main_review {
     display: flex;
@@ -245,8 +260,8 @@
   }
 
   .right {
-    width: 100%;
-    margin: 10px 15px;
+    margin: 10px;
+
     & p {
       margin: 0;
       color: #050505;
@@ -267,7 +282,7 @@
 }
 
 .fab_section {
-  margin: 10px 15px;
+  margin: 10px 0;
 
   & h6 {
     padding-top: 7px;
@@ -313,9 +328,10 @@
 
 .verfied_sec {
   margin-top: 5px;
+  margin-left: 10px;
   display: flex;
-  width: 80px;
-  height: 30px;
+  width: 70px;
+  height: 25px;
   padding: 10px;
   justify-content: center;
   align-items: center;
@@ -343,7 +359,7 @@
 }
 
 .product_sec {
-  margin: 20px 20px 10px;
+  margin: 20px 10px 10px;
   display: flex;
   justify-content: space-between;
 
@@ -396,6 +412,7 @@
   }
 
   .offer {
+    margin-left: 10px;
     display: flex;
     width: 49px;
     height: 21px;
@@ -509,6 +526,13 @@
   }
 }
 
+.scrollable_content {
+  position: relative;
+  overflow-y: scroll;
+  height: calc(100vh - 120px);
+  padding: 20px;
+}
+
 /* --------btn-section------------ */
 
 .btn_section {
@@ -543,4 +567,14 @@
     background: #d61c4e;
     color: #fff;
   }
+}
+
+.btn_fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }

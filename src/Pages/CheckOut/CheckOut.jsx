@@ -6,6 +6,7 @@ import { LuBatteryFull } from "react-icons/lu";
 import ValueBox from "../../Components/Valuebox/Valuebox";
 import { Link, useNavigate } from "react-router-dom";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import Footer from "../../Components/Footer/Footer";
 
 const CheckOut = () => {
   const [time, setTime] = useState(new Date());
@@ -30,7 +31,7 @@ const CheckOut = () => {
 
   return (
     <React.Fragment>
-      <div className={styles.header}>
+      {/* <div className={styles.header}>
         <p> {formattedTime}</p>
         <div className={styles.icon}>
           <IoMdAlarm />
@@ -39,7 +40,7 @@ const CheckOut = () => {
           <FaSignal />
           <LuBatteryFull style={{ marginTop: "-3px" }} size={22} />
         </div>
-      </div>
+      </div> */}
 
       {/* ----------main-section---------- */}
       <div className={styles.main_section}>
@@ -119,32 +120,7 @@ const CheckOut = () => {
           <button onClick={handleClick}>Checkout</button>
         </div>
 
-        <div>
-          {/* <hr style={{ color: "#d9d9d9d", height: "2px" }} /> */}
-          <div className={`${styles.footer_bottom} ${styles.fixed_footer}`}>
-            <div>
-              <img src="/images/home.png" alt="home" />
-              <p>Home</p>
-            </div>
-            <div>
-              <img src="/images/search.png" alt="home" />
-              <p>Search</p>
-            </div>
-            <div>
-              <img src="/images/Heart.png" alt="home" />
-              <p>Wishlist</p>
-            </div>
-            <div>
-              <img src="/images/bag.png" alt="home" />
-              <p>Bag</p>
-            </div>
-
-            <div>
-              <img src="/images/profile.png" alt="home" />
-              <p>Profile</p>
-            </div>
-          </div>
-        </div>
+        <Footer />
       </div>
     </React.Fragment>
   );

@@ -1,0 +1,41 @@
+.header {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+  
+    & p {
+      color: #353535;
+      text-align: center;
+      font-family: Onest;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+  
+    .icon {
+      display: flex;
+      gap: 10px;
+    }
+  }
+  
+  .head_section {
+    margin: 25px 0 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d9d9d9;
+  
+    & h6 {
+      color: #000;
+      font-family: Onest;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+  }
+
+  
+.scrollable_content {
+    position: relative;
+    overflow-y: scroll;
+    height: calc(100vh - 120px);
+    padding: 20px;
+  }
