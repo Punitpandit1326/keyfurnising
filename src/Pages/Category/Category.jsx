@@ -139,7 +139,8 @@ const Category = () => {
             </div>
           </div>
 
-          {/* <div onClick={handleClick}>
+{/* 
+          <div onClick={handleClick}>
             <div className={styles.card_section_4}>
               <img src="/images/sofa-4.png" alt="sofa" />
               <h6>Modern Sofa : Frank Gehry wiggle Chair </h6>

@@ -1,0 +1,15 @@
+.header {
+    margin: 25px 0 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d9d9d9;
+  
+    & h6 {
+      color: #000;
+      font-family: Onest;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+  }

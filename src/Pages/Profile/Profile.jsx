@@ -1,12 +1,13 @@
 import React from "react";
 import { HiUser } from "react-icons/hi2";
 import styles from "./profile.module.css";
+import { useNavigate } from "react-router-dom";
+import { CiShoppingCart } from "react-icons/ci";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
 
 const Profile = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <React.Fragment>
       <div className={styles.head_section}>
@@ -23,7 +24,7 @@ const Profile = () => {
         </div>
         <hr style={{ background: "#000", height: "1px", margin: "0" }} />
 
-          {/* ------Suppoort-section-------- */}
+        {/* ------Suppoort-section-------- */}
 
         <div className={styles.bottom_section}>
           <h6>Settings</h6>
@@ -37,7 +38,10 @@ const Profile = () => {
           </div>
           <hr style={{ height: "1px", margin: "0" }} />
 
-          <div className={styles.section} onClick={() => navigate(`/editprofile`)}>
+          <div
+            className={styles.section}
+            onClick={() => navigate(`/editprofile`)}
+          >
             <span>
               {" "}
               <HiOutlineUserCircle style={{ fontSize: "30px" }} />
@@ -47,10 +51,10 @@ const Profile = () => {
           </div>
           <hr style={{ height: "1px", margin: "0" }} />
 
-          <div className={styles.section}>
+          <div className={styles.section} onClick={() => navigate(`/myorder`)}>
             <span>
               {" "}
-              <HiOutlineUserCircle style={{ fontSize: "30px" }} />
+              <CiShoppingCart style={{ fontSize: "30px" }} />
             </span>
             <p>My orders</p>
             <MdOutlineKeyboardArrowRight className={styles.icon} />
@@ -110,12 +114,9 @@ const Profile = () => {
             <p>Call Us</p>
             <MdOutlineKeyboardArrowRight className={styles.icon} />
           </div>
-       
+
           <hr style={{ height: "1px", margin: "0" }} />
-
-        
         </div>
-
 
         {/* ------leggal-section-------- */}
 
@@ -149,19 +150,15 @@ const Profile = () => {
             <p>Open sources licences</p>
             <MdOutlineKeyboardArrowRight className={styles.icon} />
           </div>
-       
+
           <hr style={{ height: "1px", margin: "0" }} />
-
-        
         </div>
-
 
         {/* ------leggal-section-------- */}
 
         <div className={styles.bottom_section}>
           <h5>Log Out</h5>
         </div>
-
       </div>
     </React.Fragment>
   );

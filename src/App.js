@@ -13,6 +13,8 @@ import { isPlatform } from '@ionic/react';
 import Intro from "./Pages/Intro/Intro";
 import Profile from "./Pages/Profile/Profile";
 import Editprofile from "./Pages/EditProfile/Editprofile";
+import MyOrders from "./Pages/MyOrder/MyOrders";
+import OrderHistory from "./Pages/OrderHistory/OrderHistory";
 
 function App() {
   const [splash, setSplash] = useState(true);
@@ -56,6 +58,8 @@ function App() {
       <Route path="/payment" element={<Payment />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/editprofile" element={<Editprofile />} />
+      <Route path="/myorder" element={<MyOrders />} />
+      <Route path="/orderhistory" element={<OrderHistory />} />
     </Routes>
   );
 }
