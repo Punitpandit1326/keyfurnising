@@ -2,12 +2,13 @@ import React from "react";
 import { HiUser } from "react-icons/hi2";
 import styles from "./profile.module.css";
 import { useNavigate } from "react-router-dom";
+import { FaRegAddressBook } from "react-icons/fa";
 import { CiShoppingCart } from "react-icons/ci";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-
 const Profile = () => {
   const navigate = useNavigate();
+  
   return (
     <React.Fragment>
       <div className={styles.head_section}>
@@ -61,17 +62,17 @@ const Profile = () => {
           </div>
           <hr style={{ height: "1px", margin: "0" }} />
 
-          <div className={styles.section}>
+          <div className={styles.section} onClick={() => navigate(`/myaddress`)}>
             <span>
               {" "}
-              <HiOutlineUserCircle style={{ fontSize: "30px" }} />
+              <FaRegAddressBook style={{ fontSize: "30px" }} />
             </span>
             <p>My Address</p>
             <MdOutlineKeyboardArrowRight className={styles.icon} />
           </div>
           <hr style={{ height: "1px", margin: "0" }} />
 
-          <div className={styles.section}>
+          <div className={styles.section} onClick={() => navigate(`/wishlist`)}>
             <span>
               {" "}
               <HiOutlineUserCircle style={{ fontSize: "30px" }} />

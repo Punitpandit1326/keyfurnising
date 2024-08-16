@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const MyOrders = () => {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState("Active"); // Default active tab
+  const [activeTab, setActiveTab] = useState("Active"); 
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);

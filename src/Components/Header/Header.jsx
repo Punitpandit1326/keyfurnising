@@ -15,6 +15,7 @@ const Header = ({ title, subtittle }) => {
       <h6>
         <SlArrowLeft onClick={handleClick} /> {title}{" "}
       </h6>
+      
     </header>
   );
 };

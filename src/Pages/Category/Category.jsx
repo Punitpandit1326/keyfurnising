@@ -50,96 +50,96 @@ const Category = () => {
             <IoFilterSharp />
           </div>
         </div>
+        <hr />
+      </div>
+      <div className={`${styles.scrollable_content}`}>
         <div className={styles.child_img}>
           <img src="/images/bg.png" alt="back_img" />
         </div>
-      </div>
+        <div className={styles.product_section}>
+          <h6>Products</h6>
+          <hr style={{ color: "#d9d9d9", height: "2px" }} />
 
-      <div className={styles.product_section}>
-        <h6>Products</h6>
-        <hr style={{ color: "#d9d9d9", height: "2px" }} />
-
-        <div className="d-flex gap-3">
-          
-          <div onClick={handleClick}>
-            <div className={styles.card_section}>
-              <img src="/images/sofa.png" alt="sofa" />
-              <h6>Modern Sofa : Frank Gehry wiggle Chair </h6>
-              <div className="d-flex gap-2">
+          <div className="d-flex gap-3">
+            <div onClick={handleClick}>
+              <div className={styles.card_section}>
+                <img src="/images/sofa.png" alt="sofa" />
+                <h6>Modern Sofa : Frank Gehry wiggle Chair </h6>
+                <div className="d-flex gap-2">
+                  <p>
+                    <span> ₹ 2999 </span>₹ 1999
+                  </p>
+                  <div className={styles.offer}>50%</div>
+                </div>
+              </div>
+              <div className={styles.rating_section}>
+                <img src="/images/star.png" alt="star" />
                 <p>
-                  <span> ₹ 2999 </span>₹ 1999
+                  4.5 <span>(45)</span>
                 </p>
-                <div className={styles.offer}>50%</div>
               </div>
             </div>
-            <div className={styles.rating_section}>
-              <img src="/images/star.png" alt="star" />
-              <p>
-                4.5 <span>(45)</span>
-              </p>
+
+            <div onClick={handleClick}>
+              <div className={styles.card_section_2}>
+                <img src="/images/sofa-2.png" alt="sofa" />
+                <h6>Modern Sofa : Frank Gehry wiggle Chair </h6>
+                <div className="d-flex gap-2">
+                  <p>
+                    <span> ₹ 2999 </span>₹ 1999
+                  </p>
+                  <div className={styles.offer}>50%</div>
+                </div>
+              </div>
+              <div className={styles.rating_section_2}>
+                <img src="/images/star.png" alt="star" />
+                <p>
+                  4.5 <span>(45)</span>
+                </p>
+              </div>
             </div>
           </div>
 
-          <div onClick={handleClick}>
-            <div className={styles.card_section_2}>
-              <img src="/images/sofa-2.png" alt="sofa" />
-              <h6>Modern Sofa : Frank Gehry wiggle Chair </h6>
-              <div className="d-flex gap-2">
+          <div className="d-flex gap-3">
+            <div onClick={handleClick}>
+              <div className={styles.card_section_3}>
+                <img src="/images/sofa-3.png" alt="sofa" />
+                <h6>Modern Sofa : Frank Gehry wiggle Chair </h6>
+                <div className="d-flex gap-2">
+                  <p>
+                    <span> ₹ 2999 </span>₹ 1999
+                  </p>
+                  <div className={styles.offer}>50%</div>
+                </div>
+              </div>
+              <div className={styles.rating_section_3}>
+                <img src="/images/star.png" alt="star" />
                 <p>
-                  <span> ₹ 2999 </span>₹ 1999
+                  4.5 <span>(45)</span>
                 </p>
-                <div className={styles.offer}>50%</div>
               </div>
             </div>
-            <div className={styles.rating_section_2}>
-              <img src="/images/star.png" alt="star" />
-              <p>
-                4.5 <span>(45)</span>
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <div className="d-flex gap-3">
-          <div onClick={handleClick}>
-            <div className={styles.card_section_3}>
-              <img src="/images/sofa-3.png" alt="sofa" />
-              <h6>Modern Sofa : Frank Gehry wiggle Chair </h6>
-              <div className="d-flex gap-2">
+            <div onClick={handleClick}>
+              <div className={styles.card_section_3}>
+                <img src="/images/sofa-4.png" alt="sofa" />
+                <h6>Modern Sofa : Frank Gehry wiggle Chair </h6>
+                <div className="d-flex gap-2">
+                  <p>
+                    <span> ₹ 2999 </span>₹ 1999
+                  </p>
+                  <div className={styles.offer}>50%</div>
+                </div>
+              </div>
+              <div className={styles.rating_section_3}>
+                <img src="/images/star.png" alt="star" />
                 <p>
-                  <span> ₹ 2999 </span>₹ 1999
+                  4.5 <span>(45)</span>
                 </p>
-                <div className={styles.offer}>50%</div>
               </div>
             </div>
-            <div className={styles.rating_section_3}>
-              <img src="/images/star.png" alt="star" />
-              <p>
-                4.5 <span>(45)</span>
-              </p>
-            </div>
-          </div>
 
-          <div onClick={handleClick}>
-            <div className={styles.card_section_3}>
-              <img src="/images/sofa-4.png" alt="sofa" />
-              <h6>Modern Sofa : Frank Gehry wiggle Chair </h6>
-              <div className="d-flex gap-2">
-                <p>
-                  <span> ₹ 2999 </span>₹ 1999
-                </p>
-                <div className={styles.offer}>50%</div>
-              </div>
-            </div>
-            <div className={styles.rating_section_3}>
-              <img src="/images/star.png" alt="star" />
-              <p>
-                4.5 <span>(45)</span>
-              </p>
-            </div>
-          </div>
-
-{/* 
+            {/* 
           <div onClick={handleClick}>
             <div className={styles.card_section_4}>
               <img src="/images/sofa-4.png" alt="sofa" />
@@ -158,9 +158,9 @@ const Category = () => {
               </p>
             </div>
           </div> */}
+          </div>
         </div>
       </div>
-
       <Footer />
     </React.Fragment>
   );

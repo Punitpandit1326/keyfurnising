@@ -17,6 +17,8 @@ import MyOrders from "./Pages/MyOrder/MyOrders";
 import OrderHistory from "./Pages/OrderHistory/OrderHistory";
 import Home from "./Pages/Home/Home";
 import OrderDetails from "./Pages/OrderDetails/OrderDetails";
+import Wishlist from "./Pages/Wishlist/Wishlist";
+import Address from "./Pages/MyAddress/Address";
 
 function App() {
   const [splash, setSplash] = useState(true);
@@ -64,6 +66,8 @@ function App() {
       <Route path="/myorder" element={<MyOrders />} />
       <Route path="/orderhistory" element={<OrderHistory />} />
       <Route path="/orderdetails" element={<OrderDetails />} />
+      <Route path="/wishlist" element={<Wishlist />} />
+      <Route path="/myaddress" element={<Address />} />
     </Routes>
   );
 }

@@ -53,7 +53,7 @@ const CategoryDetails = () => {
 
       <div className={styles.head_section}>
         <h6>
-          <SlArrowLeft /> Product Details
+          <SlArrowLeft onClick={() => navigate(-1)} /> Product Details
         </h6>
         <div className={styles.child_img}>
           <img src="/images/share.png" alt="Heart_Red" />
