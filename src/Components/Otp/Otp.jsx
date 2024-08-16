@@ -7,7 +7,7 @@ const Otp = () => {
 
   const navigate = useNavigate();
   const next = () => {
-    navigate(`/category`);
+    navigate(`/home`);
   };
 
   const handleInputChange = (index, value) => {

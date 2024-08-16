@@ -11,10 +11,17 @@ const Footer = () => {
     if (item === "profile") {
       handleClickNavigation();
     }
+    if (item === "home") {
+      handleClick();
+    }
   };
 
   const handleClickNavigation = () => {
     navigate(`/Profile`);
+  };
+
+  const handleClick = () => {
+    navigate(`/home`);
   };
 
   return (
@@ -25,8 +32,7 @@ const Footer = () => {
           onClick={() => handleItemClick("home")}
           className={activeItem === "home" ? styles.active : ""}
         >
-          <img src="/images/home.png" alt="home" />
-          <p>Home</p>
+          <img src="/images/home.png" alt="home" /> <p>Home</p>
         </div>
         <div
           onClick={() => handleItemClick("search")}

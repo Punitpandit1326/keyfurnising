@@ -1,0 +1,247 @@
+.head_section {
+  margin: 25px 0 0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+
+  & h6 {
+    color: #000;
+    font-family: Onest;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .child_img {
+    display: flex;
+    gap: 10px;
+
+    .icon {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.scrollable_content {
+  width: 100%;
+  position: relative;
+  overflow-y: scroll;
+  height: calc(100vh - 120px);
+  padding: 20px;
+
+  & input {
+    padding: 0 10px;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-radius: 9px;
+    border: 1px solid #d9d9d9;
+  }
+
+  & input::placeholder {
+    font-family: Onest;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .search_icon {
+    position: absolute;
+    right: 40px;
+    font-size: 1.2rem;
+    top: 35px;
+  }
+
+  .category_section {
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    gap: 5px;
+  }
+
+  .categoryItem {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d61c4e;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .categoryItem:hover {
+    background-color: #fce4ec;
+  }
+
+  .categoryIcon {
+    font-size: 0.9rem;
+    color: #d61c4e;
+  }
+
+  .categoryName {
+    padding-left: 5px;
+    color: #d61c4e;
+    text-align: center;
+    font-family: Onest;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
+
+.rounded_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin: 30px 0 20px;
+
+  & img {
+    width: 90px;
+    height: 90px;
+  }
+
+  & p {
+    color: #000;
+    padding-top: 5px;
+    text-align: center;
+    font-family: Onest;
+    font-size: 0.8rempx;
+    font-weight: 400;
+  }
+}
+
+.overlay_section {
+  margin: 20px 0;
+}
+
+.overlay {
+  width: 90%;
+  position: absolute;
+  bottom: -80px;
+  background: #ffffff90;
+  height: 50px;
+  overflow: hidden;
+  padding: 10px;
+  position: absolute;
+
+  & h6 {
+    margin: 0;
+    color: #000;
+    font-family: Onest;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  & p {
+    color: #000;
+    font-family: Onest;
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+}
+
+.off {
+  position: absolute;
+  top: 78%;
+  left: 30px;
+  display: flex;
+  width: 100px;
+  height: 40px;
+  padding: 9px;
+  justify-content: center;
+  align-items: center;
+  gap: 9.112px;
+  border-radius: 4.556px;
+  background: #d61c4e;
+  color: #fff;
+  font-family: Onest;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.product_section {
+  margin: 40px 0 0;
+
+  .child {
+    display: flex;
+    justify-content: space-between;
+    & p {
+      color: #000;
+      font-family: Onest;
+      font-size: 0.97rem;
+      font-weight: 600;
+    }
+
+    & a {
+      color: #d61c4e;
+      font-family: Onest;
+      font-size: 0.97rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.card_section {
+  margin-top: 20px;
+
+  & h6 {
+    padding-top: 10px;
+    color: #000;
+    font-family: Onest;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  & p {
+    color: #000;
+    font-family: Onest;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  & span {
+    color: #b2b2b2;
+    font-family: Onest;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: line-through;
+  }
+
+  .offer {
+    display: flex;
+    width: 49px;
+    height: 21px;
+    padding: 6px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: #d1ffc7;
+    color: #55b440;
+    font-family: Onest;
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+}
+
+.rating_section {
+  position: relative;
+  width: 78px;
+  bottom: 120px;
+  left: 10px;
+  display: flex;
+  padding: 7px 8px;
+  align-items: center;
+  gap: 3px;
+  border-radius: 7px;
+  background: #fff;
+
+  & p {
+    margin: 0;
+    color: #000;
+    font-size: 0.7rem;
+    font-family: Onest;
+    font-weight: 400;
+  }
+}

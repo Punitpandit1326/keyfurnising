@@ -2,8 +2,10 @@ import React from "react";
 import styles from "./his.module.css";
 import Header from "../../Components/Header/Header";
 import { IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const OrderHistory = () => {
+  const navigate = useNavigate();
   return (
     <React.Fragment>
       <Header title="Order History" />
@@ -48,8 +50,11 @@ const OrderHistory = () => {
 
         <div className={styles.section}>
           <h6>Order Info</h6>
-          <div className={styles.input_section}>
-            <p>Write a product Review</p>
+          <div
+            className={styles.input_section}
+            onClick={() => navigate(`/orderdetails`)}
+          >
+            <p>View Order Details</p>
             <IoIosArrowForward className={styles.icon_right} />
           </div>
           <div className={styles.input_section}>
@@ -62,42 +67,41 @@ const OrderHistory = () => {
           <h1>Related Products</h1>
 
           <div className={styles.card}>
-          <div>
-            <div className={styles.card_section_3}>
-              <img src="/images/sofa-4.png" alt="sofa" />
-              <h6>
-                Modern Sofa Chair : Frank <br /> Gehry wiggle Chair{" "}
-              </h6>
-              <div className="d-flex gap-2">
-                <p>
-                  <span> ₹ 2999 </span>₹ 1999
-                </p>
-                <div className={styles.offer}>50%</div>
+            <div>
+              <div className={styles.card_section_3}>
+                <img src="/images/sofa-4.png" alt="sofa" />
+                <h6>
+                  Modern Sofa Chair : Frank <br /> Gehry wiggle Chair{" "}
+                </h6>
+                <div className="d-flex gap-2">
+                  <p>
+                    <span> ₹ 2999 </span>₹ 1999
+                  </p>
+                  <div className={styles.offer}>50%</div>
+                </div>
+              </div>
+              <div className={styles.rating_section_4}>
+                <img src="/images/star.png" alt="star" /> <p>4.5 (45)</p>
               </div>
             </div>
-            <div className={styles.rating_section_4}>
-              <img src="/images/star.png" alt="star" /> <p>4.5 (45)</p>
-            </div>
-          </div>
 
-
-          <div>
-            <div className={styles.card_section_2}>
-              <img src="/images/sofa-2.png" alt="sofa" />
-              <h6>
-                Modern Sofa Chair : Frank <br /> Gehry wiggle Chair{" "}
-              </h6>
-              <div className="d-flex gap-2">
-                <p>
-                  <span> ₹ 2999 </span>₹ 1999
-                </p>
-                <div className={styles.offer}>50%</div>
+            <div>
+              <div className={styles.card_section_2}>
+                <img src="/images/sofa-2.png" alt="sofa" />
+                <h6>
+                  Modern Sofa Chair : Frank <br /> Gehry wiggle Chair{" "}
+                </h6>
+                <div className="d-flex gap-2">
+                  <p>
+                    <span> ₹ 2999 </span>₹ 1999
+                  </p>
+                  <div className={styles.offer}>50%</div>
+                </div>
+              </div>
+              <div className={styles.rating_section_2}>
+                <img src="/images/star.png" alt="star" /> <p>4.5 (45)</p>
               </div>
             </div>
-            <div className={styles.rating_section_2}>
-              <img src="/images/star.png" alt="star" /> <p>4.5 (45)</p>
-            </div>
-          </div>
           </div>
         </div>
       </div>

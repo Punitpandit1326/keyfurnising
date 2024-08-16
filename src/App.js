@@ -15,6 +15,8 @@ import Profile from "./Pages/Profile/Profile";
 import Editprofile from "./Pages/EditProfile/Editprofile";
 import MyOrders from "./Pages/MyOrder/MyOrders";
 import OrderHistory from "./Pages/OrderHistory/OrderHistory";
+import Home from "./Pages/Home/Home";
+import OrderDetails from "./Pages/OrderDetails/OrderDetails";
 
 function App() {
   const [splash, setSplash] = useState(true);
@@ -52,6 +54,7 @@ function App() {
       <Route path="/" element={<Intro />} />
       <Route path="/login" element={<Login />} />
       <Route path="/otp" element={<Otp />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/category" element={<Category />} />
       <Route path="/category/categorydetails" element={<CategoryDetails />} />
       <Route path="/checkout" element={<CheckOut />} />
@@ -60,6 +63,7 @@ function App() {
       <Route path="/editprofile" element={<Editprofile />} />
       <Route path="/myorder" element={<MyOrders />} />
       <Route path="/orderhistory" element={<OrderHistory />} />
+      <Route path="/orderdetails" element={<OrderDetails />} />
     </Routes>
   );
 }
