@@ -21,6 +21,7 @@ import Wishlist from "./Pages/Wishlist/Wishlist";
 import Address from "./Pages/MyAddress/Address";
 import AddAddress from "./Pages/AddAddress/AddAddress";
 import Coupon from "./Pages/Coupons/Coupon";
+import Review from "./Pages/Review/Review";
 
 function App() {
   const [splash, setSplash] = useState(true);
@@ -72,6 +73,7 @@ function App() {
       <Route path="/myaddress" element={<Address />} />
       <Route path="/addaddress" element={<AddAddress />} />
       <Route path="/coupon" element={<Coupon />} />
+      <Route path="/review" element={<Review />} />
     </Routes>
   );
 }

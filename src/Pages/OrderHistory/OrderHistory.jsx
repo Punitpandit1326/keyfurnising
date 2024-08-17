@@ -40,7 +40,7 @@ const OrderHistory = () => {
           <IoIosArrowForward className={styles.icon_right} />
         </div>
 
-        <div className={styles.section}>
+        <div className={styles.section} onClick={() => navigate(`/review`)}>
           <h6>How’s your Item</h6>
           <div className={styles.input_section}>
             <p>Write a product Review</p>
