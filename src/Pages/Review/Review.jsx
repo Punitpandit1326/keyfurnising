@@ -4,8 +4,10 @@ import Header from "../../Components/Header/Header";
 import StarRating from "../../Components/Star/StarRating";
 import { MdOutlineAddPhotoAlternate } from "react-icons/md";
 import { Form } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const Review = () => {
+  const navigate = useNavigate()
   const fileInputRef = useRef(null);
 
   const handleClick = () => {
@@ -53,7 +55,7 @@ const Review = () => {
                 <Form.Label>Description</Form.Label>
                 <Form.Control as="textarea" rows={4} cols={50} />
               </Form.Group>
-              <button>Submit</button>
+              <button onClick={() => navigate(`/help`)}>Submit</button>
             </Form>
           </div>
         </div>

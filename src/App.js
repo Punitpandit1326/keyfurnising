@@ -2,14 +2,14 @@ import "./App.css";
 import Otp from "./Components/Otp/Otp";
 import Login from "./Components/Login/Login";
 import SplashScreen from "./Pages/SplashScreen/SplashScreen";
-import {  Route, Routes, useNavigate, useLocation } from "react-router-dom";
+import { Route, Routes, useNavigate, useLocation } from "react-router-dom";
 import Category from "./Pages/Category/Category";
 import CategoryDetails from "./Pages/CategoryDetails/CategoryDetails";
 import CheckOut from "./Pages/CheckOut/CheckOut";
 import Payment from "./Pages/Payment/Payment";
 import { useEffect, useState } from "react";
-import { App as CapacitorApp } from '@capacitor/app';
-import { isPlatform } from '@ionic/react';
+import { App as CapacitorApp } from "@capacitor/app";
+import { isPlatform } from "@ionic/react";
 import Intro from "./Pages/Intro/Intro";
 import Profile from "./Pages/Profile/Profile";
 import Editprofile from "./Pages/EditProfile/Editprofile";
@@ -22,6 +22,9 @@ import Address from "./Pages/MyAddress/Address";
 import AddAddress from "./Pages/AddAddress/AddAddress";
 import Coupon from "./Pages/Coupons/Coupon";
 import Review from "./Pages/Review/Review";
+import Help from "./Pages/Help/Help";
+import Help2 from "./Pages/Help2/Help2";
+import ChatSupport from "./Pages/ChatSupport/ChatSupport";
 
 function App() {
   const [splash, setSplash] = useState(true);
@@ -37,9 +40,9 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (isPlatform('android')) {
-      const backButtonListener = CapacitorApp.addListener('backButton', () => {
-        if (location.pathname === '/' || location.pathname === '/intro') {
+    if (isPlatform("android")) {
+      const backButtonListener = CapacitorApp.addListener("backButton", () => {
+        if (location.pathname === "/" || location.pathname === "/intro") {
           CapacitorApp.exitApp();
         } else {
           navigate(-1);
@@ -74,6 +77,9 @@ function App() {
       <Route path="/addaddress" element={<AddAddress />} />
       <Route path="/coupon" element={<Coupon />} />
       <Route path="/review" element={<Review />} />
+      <Route path="/help" element={<Help />} />
+      <Route path="/help2" element={<Help2 />} />
+      <Route path="/chatsupport" element={<ChatSupport />} />
     </Routes>
   );
 }
