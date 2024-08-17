@@ -16,7 +16,7 @@ const Address = () => {
           <SlArrowLeft onClick={() => navigate(-1)} /> My Address
         </h6>
         <span>
-          <CgAddR className={styles.icon} />
+          <CgAddR onClick={() => navigate(`/addaddress`) } className={styles.icon} />
         </span>
       </div>
 
