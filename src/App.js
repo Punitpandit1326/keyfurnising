@@ -25,6 +25,8 @@ import Review from "./Pages/Review/Review";
 import Help from "./Pages/Help/Help";
 import Help2 from "./Pages/Help2/Help2";
 import ChatSupport from "./Pages/ChatSupport/ChatSupport";
+import ProductReturn from "./Pages/ProductReturn/ProductReturn";
+import ProductReturn2 from "./Pages/ProductReturn2/ProductReturn2";
 
 function App() {
   const [splash, setSplash] = useState(true);
@@ -80,6 +82,8 @@ function App() {
       <Route path="/help" element={<Help />} />
       <Route path="/help2" element={<Help2 />} />
       <Route path="/chatsupport" element={<ChatSupport />} />
+      <Route path="/product-return" element={<ProductReturn />} />
+      <Route path="/productreturn" element={<ProductReturn2 />} />
     </Routes>
   );
 }

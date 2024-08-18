@@ -27,6 +27,8 @@ const OrderDetails = () => {
           </div>
           <hr />
         </div>
+
+        
         <div className="mt-5">
           <Step />
           <hr className="m-0" />

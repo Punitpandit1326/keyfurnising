@@ -35,7 +35,10 @@ const Help = () => {
           </span>
         </div>
 
-        <div className={styles.orders}>
+        <div
+          className={styles.orders}
+          onClick={() => navigate(`/product-return`)}
+        >
           <div className="d-flex gap-2">
             <div className={styles.bag}>
               <img src="/images/rotate.png" alt="bag" />
