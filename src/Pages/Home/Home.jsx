@@ -31,7 +31,7 @@ const Home = () => {
         </h6>
         <div className={styles.child_img}>
           <LuShoppingBag className={styles.icon} />
-          <FaRegBell className={styles.icon} />
+          <FaRegBell onClick={() => navigate(`/notification`)} className={styles.icon} />
         </div>
       </div>
 
