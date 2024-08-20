@@ -1,4 +1,3 @@
-import React, { useEffect, useRef, useState } from "react";
 import styles from "./category.module.css";
 import "./cate.css";
 import { FaSignal } from "react-icons/fa";
@@ -6,22 +5,19 @@ import { LuBatteryFull } from "react-icons/lu";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SlArrowLeft } from "react-icons/sl";
 import { FaStar, FaCheck } from "react-icons/fa";
+import { ProgressBar } from "react-bootstrap";
+import { Link, useNavigate } from "react-router-dom";
+import { Pagination, Navigation } from "swiper/modules";
+import StarRating from "../../Components/Star/StarRating";
+import React, { useEffect, useRef, useState } from "react";
 import ColorPicker from "../../Components/Color/ColorPicker";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import {
-  MdKeyboardArrowRight,
-  MdKeyboardArrowLeft,
-  MdEdit,
-} from "react-icons/md";
-import { Pagination, Navigation } from "swiper/modules";
-
-import { ProgressBar } from "react-bootstrap";
-import StarRating from "../../Components/Star/StarRating";
 // import { IoMdAlarm, IoIosWifi, IoMdBluetooth } from "react-icons/io";
-import { Link, useNavigate } from "react-router-dom";
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft, MdEdit,} from "react-icons/md";
 
 const CategoryDetails = () => {
-  // const [mainImage, setMainImage] = useState("/Images/chair-1.png");
+  const [activeIndex, setActiveIndex] = useState(0);
+
   // const [time, setTime] = useState(new Date());
 
   const navigate = useNavigate();
@@ -37,8 +33,7 @@ const CategoryDetails = () => {
     "/Images/chair-4.png",
   ];
 
-  // State to manage the active index
-  const [activeIndex, setActiveIndex] = useState(0);
+
 
   // Ref to access Swiper instance
   const swiperRef = useRef(null);
@@ -52,7 +47,7 @@ const CategoryDetails = () => {
   // Handle thumbnail click
   const handleThumbnailClick = (index) => {
     setActiveIndex(index);
-    swiperRef.current?.slideTo(index); // Move Swiper to the selected slide
+    swiperRef.current?.slideTo(index); 
   };
 
   // useEffect(() => {
@@ -93,126 +88,18 @@ const CategoryDetails = () => {
 
       <div className={`${styles.scrollable_content}`}>
         <div className={styles.slider_section}>
-          {/* <div>
-            <MdKeyboardArrowRight className={styles.right_arr} />
-          <MdKeyboardArrowLeft className={styles.left_arr} />
-
-    
-          <img src="/images/chairs.png" alt="chair" />
-         <img src="/images/chair.png" alt="chair" />
-      </div> */}
 
           {/* ----------swiper-section--------- */}
-
-          {/* 
-          <Swiper navigation={true} modules={[Pagination]} className="mySwiper">
-            <SwiperSlide>
-              <div className={styles.slider}>
-                <img className={styles.mainImage} src={mainImage} alt="chair" />
-                <div className={styles.allChairs}>
-                  <div className={styles.chair_img}>
-                    {" "}
-                    <img
-                      src="/Images/chair-1.png"
-                      alt="chair-1"
-                      onClick={() => setMainImage("/Images/chair-1.png")}
-                    />{" "}
-                  </div>
-                  <div className={styles.chair_img}>
-                    {" "}
-                    <img
-                      src="/Images/chair-2.png"
-                      alt="chair-2"
-                      onClick={() => setMainImage("/Images/chair-2.png")}
-                    />{" "}
-                  </div>
-                  <div className={styles.chair_img}>
-                    {" "}
-                    <img
-                      src="/Images/chair-3.png"
-                      alt="chair-3"
-                      onClick={() => setMainImage("/Images/chair-3.png")}
-                    />{" "}
-                  </div>
-                  <div className={styles.chair_img}>
-                    {" "}
-                    <img
-                      src="/Images/chair-4.png"
-                      alt="chair-4"
-                      onClick={() => setMainImage("/Images/chair-4.png")}
-                    />{" "}
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className={styles.slider}>
-                <img className={styles.mainImage} src={mainImage} alt="chair" />
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className={styles.slider}>
-                <img className={styles.mainImage} src={mainImage} alt="chair" />
-</div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className={styles.slider}>
-                <img className={styles.mainImage} src={mainImage} alt="chair" />
-              </div>
-            </SwiperSlide>
-           </Swiper> */}
-
-          {/* <div className={styles.swiperContainer}>
-            <Swiper
-              navigation={true}
-              modules={[Navigation]}
-              className="mySwiper"
-              onSlideChange={handleSlideChange}
-              initialSlide={activeIndex}
-            >
-              {images.map((img, index) => (
-                <SwiperSlide key={index}>
-                  <div className={styles.slider}>
-                    <img
-                      className={styles.mainImage}
-                      src={img}
-                      alt={`chair-${index}`}
-                    />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-
-            <div className={styles.allChairs}>
-              {images.map((img, index) => (
-                <img
-                  key={index}
-                  src={img}
-                  alt={`chair-${index}`}
-                  className={`${styles.smallImage} ${
-                    activeIndex === index ? styles.active : ""
-                  }`}
-                  onClick={() => {
-                    setActiveIndex(index);
-                    setMainImage(img);
-                  }}
-                />
-              ))}
-            </div>
-          </div> */}
 
           <div className={styles.swiperContainer}>
             <Swiper
               navigation={true}
               modules={[Navigation]}
               className="mySwiper"
-              onSlideChange={handleSlideChange} // Handle slide change
-              initialSlide={activeIndex} // Start at the active slide
+              onSlideChange={handleSlideChange} 
+              initialSlide={activeIndex} 
               onSwiper={(swiper) => {
-                swiperRef.current = swiper; // Store the swiper instance
+                swiperRef.current = swiper; 
               }}
             >
               {images.map((img, index) => (
