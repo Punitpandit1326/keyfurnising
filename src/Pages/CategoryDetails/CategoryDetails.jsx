@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./category.module.css";
 import "./cate.css";
 import { FaSignal } from "react-icons/fa";
 import { LuBatteryFull } from "react-icons/lu";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { SlArrowLeft } from "react-icons/sl";
 import { FaStar, FaCheck } from "react-icons/fa";
 import ColorPicker from "../../Components/Color/ColorPicker";
@@ -12,17 +13,46 @@ import {
   MdKeyboardArrowLeft,
   MdEdit,
 } from "react-icons/md";
+import { Pagination, Navigation } from "swiper/modules";
+
 import { ProgressBar } from "react-bootstrap";
 import StarRating from "../../Components/Star/StarRating";
 // import { IoMdAlarm, IoIosWifi, IoMdBluetooth } from "react-icons/io";
 import { Link, useNavigate } from "react-router-dom";
 
 const CategoryDetails = () => {
+  // const [mainImage, setMainImage] = useState("/Images/chair-1.png");
   // const [time, setTime] = useState(new Date());
+
   const navigate = useNavigate();
 
   const handleclick = () => {
     navigate(`/checkout`);
+  };
+
+  const images = [
+    "/Images/chair.png",
+    "/Images/chair-2.png",
+    "/Images/chair-3.png",
+    "/Images/chair-4.png",
+  ];
+
+  // State to manage the active index
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  // Ref to access Swiper instance
+  const swiperRef = useRef(null);
+
+  // Handle Swiper slide change
+  const handleSlideChange = (swiper) => {
+    const index = swiper.activeIndex;
+    setActiveIndex(index);
+  };
+
+  // Handle thumbnail click
+  const handleThumbnailClick = (index) => {
+    setActiveIndex(index);
+    swiperRef.current?.slideTo(index); // Move Swiper to the selected slide
   };
 
   // useEffect(() => {
@@ -63,11 +93,156 @@ const CategoryDetails = () => {
 
       <div className={`${styles.scrollable_content}`}>
         <div className={styles.slider_section}>
-          <MdKeyboardArrowRight className={styles.right_arr} />
+          {/* <div>
+            <MdKeyboardArrowRight className={styles.right_arr} />
           <MdKeyboardArrowLeft className={styles.left_arr} />
 
-          <img src="/images/chair.png" alt="chair" />
+    
           <img src="/images/chairs.png" alt="chair" />
+         <img src="/images/chair.png" alt="chair" />
+      </div> */}
+
+          {/* ----------swiper-section--------- */}
+
+          {/* 
+          <Swiper navigation={true} modules={[Pagination]} className="mySwiper">
+            <SwiperSlide>
+              <div className={styles.slider}>
+                <img className={styles.mainImage} src={mainImage} alt="chair" />
+                <div className={styles.allChairs}>
+                  <div className={styles.chair_img}>
+                    {" "}
+                    <img
+                      src="/Images/chair-1.png"
+                      alt="chair-1"
+                      onClick={() => setMainImage("/Images/chair-1.png")}
+                    />{" "}
+                  </div>
+                  <div className={styles.chair_img}>
+                    {" "}
+                    <img
+                      src="/Images/chair-2.png"
+                      alt="chair-2"
+                      onClick={() => setMainImage("/Images/chair-2.png")}
+                    />{" "}
+                  </div>
+                  <div className={styles.chair_img}>
+                    {" "}
+                    <img
+                      src="/Images/chair-3.png"
+                      alt="chair-3"
+                      onClick={() => setMainImage("/Images/chair-3.png")}
+                    />{" "}
+                  </div>
+                  <div className={styles.chair_img}>
+                    {" "}
+                    <img
+                      src="/Images/chair-4.png"
+                      alt="chair-4"
+                      onClick={() => setMainImage("/Images/chair-4.png")}
+                    />{" "}
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className={styles.slider}>
+                <img className={styles.mainImage} src={mainImage} alt="chair" />
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className={styles.slider}>
+                <img className={styles.mainImage} src={mainImage} alt="chair" />
+</div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className={styles.slider}>
+                <img className={styles.mainImage} src={mainImage} alt="chair" />
+              </div>
+            </SwiperSlide>
+           </Swiper> */}
+
+          {/* <div className={styles.swiperContainer}>
+            <Swiper
+              navigation={true}
+              modules={[Navigation]}
+              className="mySwiper"
+              onSlideChange={handleSlideChange}
+              initialSlide={activeIndex}
+            >
+              {images.map((img, index) => (
+                <SwiperSlide key={index}>
+                  <div className={styles.slider}>
+                    <img
+                      className={styles.mainImage}
+                      src={img}
+                      alt={`chair-${index}`}
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            <div className={styles.allChairs}>
+              {images.map((img, index) => (
+                <img
+                  key={index}
+                  src={img}
+                  alt={`chair-${index}`}
+                  className={`${styles.smallImage} ${
+                    activeIndex === index ? styles.active : ""
+                  }`}
+                  onClick={() => {
+                    setActiveIndex(index);
+                    setMainImage(img);
+                  }}
+                />
+              ))}
+            </div>
+          </div> */}
+
+          <div className={styles.swiperContainer}>
+            <Swiper
+              navigation={true}
+              modules={[Navigation]}
+              className="mySwiper"
+              onSlideChange={handleSlideChange} // Handle slide change
+              initialSlide={activeIndex} // Start at the active slide
+              onSwiper={(swiper) => {
+                swiperRef.current = swiper; // Store the swiper instance
+              }}
+            >
+              {images.map((img, index) => (
+                <SwiperSlide key={index}>
+                  <div className={styles.slider}>
+                    <img
+                      className={styles.mainImage}
+                      src={img}
+                      alt={`chair-${index}`}
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            {/* Thumbnails below the Swiper */}
+            <div className={styles.allChairs}>
+              {images.map((img, index) => (
+                <img
+                  key={index}
+                  src={img}
+                  alt={`chair-${index}`}
+                  className={`${styles.smallImage} ${
+                    activeIndex === index ? styles.active : ""
+                  }`}
+                  onClick={() => handleThumbnailClick(index)}
+                />
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className={styles.des_section}>

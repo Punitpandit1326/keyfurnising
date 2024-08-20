@@ -18,12 +18,12 @@
 }
 
 .head_section {
-  margin: 25px;
+  margin: 20px;
   display: flex;
   justify-content: space-between;
 
   & h6 {
-    color: #000;
+    padding-top: 10px;
     font-family: Onest;
     font-size: 1.1rem;
     font-weight: 500;
@@ -42,7 +42,7 @@
 }
 
 .child_img {
-  margin: 20px;
+  margin: 0 20px 20px;
 
   & img {
     width: 100%;
