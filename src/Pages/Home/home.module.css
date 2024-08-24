@@ -118,12 +118,11 @@
 .overlay {
   width: 90%;
   position: absolute;
-  bottom: -80px;
+  bottom: -153px;
   background: #ffffff90;
   height: 50px;
   overflow: hidden;
   padding: 10px;
-  position: absolute;
 
   & h6 {
     margin: 0;
@@ -143,7 +142,7 @@
 
 .off {
   position: absolute;
-  top: 78%;
+  top: 90%;
   left: 30px;
   display: flex;
   width: 100px;

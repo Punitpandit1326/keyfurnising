@@ -1,165 +1,106 @@
 import React from "react";
 import { HiUser } from "react-icons/hi2";
+import { BsHeart } from "react-icons/bs";
 import styles from "./profile.module.css";
 import { useNavigate } from "react-router-dom";
-import { FaRegAddressBook } from "react-icons/fa";
-import { CiShoppingCart } from "react-icons/ci";
-import { HiOutlineUserCircle } from "react-icons/hi";
+import { FiShoppingBag } from "react-icons/fi";
+import Footer from "../../Components/Footer/Footer"
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+
 const Profile = () => {
   const navigate = useNavigate();
-  
+
   return (
     <React.Fragment>
       <div className={styles.head_section}>
         <h6>Profile</h6>
         <div className={styles.user_section}>
-          <div className={styles.user_icon}>
-            {" "}
-            <HiUser />
+          <div className="d-flex gap-2">
+            <div className={styles.user_icon}>
+              <HiUser />
+            </div>
+            <div>
+              <h6>Nishant Choudhary</h6>
+              <p>Nishu12364@gmail.com</p>
+            </div>
           </div>
-          <div>
-            <h6>Nishant Choudhary</h6>
-            <p>Nishu12364@gmail.com</p>
+          <img
+            onClick={() => navigate(`/editprofile`)}
+            src="/Images/edit_profile.png"
+            alt="profile"
+          />
+        </div>
+
+        {/* ------hero-section-------- */}
+
+        <div className={styles.main_hero_section}>
+          <div className={styles.cards} onClick={() => navigate(`/wishlist`)}>
+            <span>
+              <BsHeart />
+            </span>
+            <p>My Wishlist</p>
+          </div>
+
+          <div className={styles.cards} onClick={() => navigate(`/myorder`)}>
+            <span>
+              <FiShoppingBag />
+            </span>
+            <p>My Orders</p>
           </div>
         </div>
-        <hr style={{ background: "#000", height: "1px", margin: "0" }} />
 
         {/* ------Suppoort-section-------- */}
 
         <div className={styles.bottom_section}>
-          <h6>Settings</h6>
-          <div className={styles.section}>
-            <span>
-              {" "}
-              <HiOutlineUserCircle style={{ fontSize: "30px" }} />
-            </span>
-            <p>Personal Information</p>
-            <MdOutlineKeyboardArrowRight className={styles.icon} />
-          </div>
-          <hr style={{ height: "1px", margin: "0" }} />
-
           <div
             className={styles.section}
             onClick={() => navigate(`/editprofile`)}
           >
-            <span>
-              {" "}
-              <HiOutlineUserCircle style={{ fontSize: "30px" }} />
-            </span>
+             <img src="/Images/fileAdd.png" alt="file" width="30px" height="28px" />
             <p>Edit Profile</p>
             <MdOutlineKeyboardArrowRight className={styles.icon} />
           </div>
-          <hr style={{ height: "1px", margin: "0" }} />
-
-          <div className={styles.section} onClick={() => navigate(`/myorder`)}>
-            <span>
-              {" "}
-              <CiShoppingCart style={{ fontSize: "30px" }} />
-            </span>
-            <p>My orders</p>
-            <MdOutlineKeyboardArrowRight className={styles.icon} />
-          </div>
-          <hr style={{ height: "1px", margin: "0" }} />
-
-          <div className={styles.section} onClick={() => navigate(`/myaddress`)}>
-            <span>
-              {" "}
-              <FaRegAddressBook style={{ fontSize: "30px" }} />
-            </span>
-            <p>My Address</p>
-            <MdOutlineKeyboardArrowRight className={styles.icon} />
-          </div>
-          <hr style={{ height: "1px", margin: "0" }} />
-
-          <div className={styles.section} onClick={() => navigate(`/wishlist`)}>
-            <span>
-              {" "}
-              <HiOutlineUserCircle style={{ fontSize: "30px" }} />
-            </span>
-            <p>My Wishlist</p>
-            <MdOutlineKeyboardArrowRight className={styles.icon} />
-          </div>
-          <hr style={{ height: "1px", margin: "0" }} />
-        </div>
-
-        {/* ------Support-section-------- */}
-
-        <div className={styles.bottom_section}>
-          <h6>Support</h6>
-          <div className={styles.section}>
-            <span>
-              {" "}
-              <HiOutlineUserCircle style={{ fontSize: "30px" }} />
-            </span>
-            <p>Give us Feedback</p>
-            <MdOutlineKeyboardArrowRight className={styles.icon} />
-          </div>
-          <hr style={{ height: "1px", margin: "0" }} />
 
           <div className={styles.section}>
-            <span>
-              {" "}
-              <HiOutlineUserCircle style={{ fontSize: "30px" }} />
-            </span>
-            <p>Report a product</p>
+          <img src="/Images/fileAdd.png" alt="file" width="30px" height="28px" />
+            <p>Help</p>
             <MdOutlineKeyboardArrowRight className={styles.icon} />
           </div>
-          <hr style={{ height: "1px", margin: "0" }} />
 
           <div className={styles.section}>
-            <span>
-              {" "}
-              <HiOutlineUserCircle style={{ fontSize: "30px" }} />
-            </span>
-            <p>Call Us</p>
+          <img src="/Images/fileAdd.png" alt="file" width="30px" height="28px" />
+            <p>Coupons & Promotional deals</p>
             <MdOutlineKeyboardArrowRight className={styles.icon} />
           </div>
 
-          <hr style={{ height: "1px", margin: "0" }} />
+          <div
+            className={styles.section}
+            onClick={() => navigate(`/myaddress`)}
+          >
+            <img src="/Images/fileAdd.png" alt="file" width="30px" height="28px" />
+            <p>Manage Addresses</p>
+            <MdOutlineKeyboardArrowRight className={styles.icon} />
+          </div>
+
+          <div
+            className={styles.section}
+            onClick={() => navigate(`/chatsupport`)}
+          >
+            <img src="/Images/fileAdd.png" alt="file" width="30px" height="28px" />
+            <p>Chat with us</p>
+            <MdOutlineKeyboardArrowRight className={styles.icon} />
+          </div>
         </div>
 
         {/* ------leggal-section-------- */}
 
-        <div className={styles.bottom_section}>
-          <h6>Legal</h6>
-          <div className={styles.section}>
-            <span>
-              {" "}
-              <HiOutlineUserCircle style={{ fontSize: "30px" }} />
-            </span>
-            <p>Terms & Condition</p>
-            <MdOutlineKeyboardArrowRight className={styles.icon} />
-          </div>
-          <hr style={{ height: "1px", margin: "0" }} />
-
-          <div className={styles.section}>
-            <span>
-              {" "}
-              <HiOutlineUserCircle style={{ fontSize: "30px" }} />
-            </span>
-            <p>Privacy Policies</p>
-            <MdOutlineKeyboardArrowRight className={styles.icon} />
-          </div>
-          <hr style={{ height: "1px", margin: "0" }} />
-
-          <div className={styles.section}>
-            <span>
-              {" "}
-              <HiOutlineUserCircle style={{ fontSize: "30px" }} />
-            </span>
-            <p>Open sources licences</p>
-            <MdOutlineKeyboardArrowRight className={styles.icon} />
-          </div>
-
-          <hr style={{ height: "1px", margin: "0" }} />
+        <div className={styles.bottom_section_end}>
+    <button>Log Out</button>
+    <p>Version 1.0</p>
         </div>
 
-        {/* ------leggal-section-------- */}
 
-        <div className={styles.bottom_section}>
-          <h5>Log Out</h5>
-        </div>
+        <Footer/>
       </div>
     </React.Fragment>
   );

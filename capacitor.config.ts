@@ -5,8 +5,8 @@ const config: CapacitorConfig = {
   appName: "keyfurnising",
   webDir: "build",
   server: {
-    url : 'http://192.168.1.4:3000',
-    // url: "http://192.168.1.8:3000",
+    // url: "https://cheery-gingersnap-233416.netlify.app",
+    url: "http://192.168.1.7:3000",
     cleartext: true,
   },
 };
