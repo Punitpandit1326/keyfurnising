@@ -14,6 +14,9 @@ const Footer = () => {
     if (item === "home") {
       handleClick();
     }
+    if (item === "search") {
+      handleSearch();
+    }
   };
 
   const handleClickNavigation = () => {
@@ -23,6 +26,10 @@ const Footer = () => {
   const handleClick = () => {
     navigate(`/home`);
   };
+
+  const handleSearch = () => {
+    navigate(`/search`);
+  }
 
   return (
     <div>

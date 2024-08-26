@@ -29,6 +29,7 @@ import ProductReturn from "./Pages/ProductReturn/ProductReturn";
 import ProductReturn2 from "./Pages/ProductReturn2/ProductReturn2";
 import Notification from "./Pages/Notification/Notification";
 import TroublePage from "./Pages/TroublePage/TroublePage";
+import Search from "./Pages/Search/Search";
 
 function App() {
   const [splash, setSplash] = useState(true);
@@ -88,6 +89,7 @@ function App() {
       <Route path="/product-return" element={<ProductReturn />} />
       <Route path="/productreturn" element={<ProductReturn2 />} />
       <Route path="/notification" element={<Notification />} />
+      <Route path="/search" element={<Search />} />
     </Routes>
   );
 }

@@ -1,0 +1,53 @@
+.main {
+  margin: 20px;
+
+  & h6 {
+    padding: 10px 0;
+    font-family: Onest;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  & p {
+    padding: 20px 0 0;
+    font-family: Onest;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  & input {
+    padding: 10px;
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid #d9d9d9;
+  }
+
+  & input::placeholder {
+    color: #c3c3c3;
+    font-family: Onest;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  .scrollable_content {
+    width: 100%;
+    position: relative;
+    overflow-y: scroll;
+    height: calc(100vh - 120px);
+    padding: 10px 0;
+
+    .search_entry {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      & span {
+        color: #898989;
+        font-family: Onest;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
