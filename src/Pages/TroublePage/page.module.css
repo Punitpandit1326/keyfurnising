@@ -1,0 +1,57 @@
+.main_section {
+  margin: 30px 20px;
+
+
+  & h6 {
+    font-family: Onest;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+
+  .input_section {
+    margin: 10px 0;
+    padding: 15px;
+    height: 50px;
+    border-radius: 9px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    position: relative;
+
+    & p {
+      margin: 0;
+      font-family: Onest;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .icon_right {
+      position: absolute;
+      top: 15px;
+      right: 5px;
+      color: #d61c4e;
+    }
+  }
+
+  .bottom_section {
+    margin-top: 280px;
+
+
+    & span {
+      cursor: pointer;
+      color: #1877f2;
+      font-family: Onest;
+      font-size: 0.8rem;
+      font-weight: 400;
+      text-decoration-line: underline;
+    }
+
+    & p {
+      color: #000;
+      text-align: center;
+      font-family: Onest;
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+  }
+}

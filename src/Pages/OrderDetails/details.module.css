@@ -61,6 +61,31 @@
       font-weight: 500;
     }
   }
+
+  .input_section {
+    margin: 25px 0;
+    padding: 15px;
+    height: 50px;
+    border-radius: 9px;
+    border: 1px solid #D61C4E;
+    background: #fff;
+    position: relative;
+
+    & p {
+      color: #D61C4E;
+      margin: 0;
+      font-family: Onest;
+      font-size: 0.87rem;
+      font-weight: 500;
+    }
+
+    .icon_right {
+      position: absolute;
+      top: 15px;
+      right: 5px;
+      color: #d61c4e;
+    }
+  }
 }
 
 .card_section::after {

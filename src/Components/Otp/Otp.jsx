@@ -50,7 +50,7 @@ const Otp = () => {
               </div>
             </div>
             <button onClick={next}>Verify Otp</button>
-            <Link to={""}>Any Trouble with login ?</Link>
+            <Link to={"/any-trouble-page"}>Any Trouble with login ?</Link>
             <p>
               By signing up , you agree to our <span>Terms</span>. See how we
               use your data in our <span>Privacy Policy</span>. We Never Post to

@@ -14,6 +14,9 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Link, useNavigate } from "react-router-dom";
 import Footer from "../../Components/Footer/Footer";
+import CouponModal from "../CheckOut/CouponModal/CouponModal";
+
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -23,6 +26,12 @@ const Home = () => {
     { name: "Furniture", icon: <FaCouch /> },
     { name: "Interior", icon: <FaCouch /> },
   ];
+
+
+const handleClick = () => {
+  navigate(`/checkout`)
+}
+
   return (
     <React.Fragment>
       <div className={styles.head_section}>
@@ -30,7 +39,7 @@ const Home = () => {
           <PiMapPinAreaBold className={styles.icon} /> Lajpat Nagar, Delhi
         </h6>
         <div className={styles.child_img}>
-          <LuShoppingBag className={styles.icon} />
+          <LuShoppingBag onClick={handleClick} className={styles.icon} />
           <FaRegBell onClick={() => navigate(`/notification`)} className={styles.icon} />
         </div>
       </div>
@@ -254,6 +263,10 @@ const Home = () => {
 
         <Footer />
       </div>
+
+    
+
+
     </React.Fragment>
   );
 };

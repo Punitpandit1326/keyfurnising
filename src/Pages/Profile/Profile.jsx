@@ -35,16 +35,12 @@ const Profile = () => {
 
         <div className={styles.main_hero_section}>
           <div className={styles.cards} onClick={() => navigate(`/wishlist`)}>
-            <span>
-              <BsHeart />
-            </span>
+            <span>  <BsHeart /> </span>
             <p>My Wishlist</p>
           </div>
 
           <div className={styles.cards} onClick={() => navigate(`/myorder`)}>
-            <span>
-              <FiShoppingBag />
-            </span>
+            <span>  <FiShoppingBag />  </span>
             <p>My Orders</p>
           </div>
         </div>
@@ -52,16 +48,13 @@ const Profile = () => {
         {/* ------Suppoort-section-------- */}
 
         <div className={styles.bottom_section}>
-          <div
-            className={styles.section}
-            onClick={() => navigate(`/editprofile`)}
-          >
+          <div className={styles.section} onClick={() => navigate(`/editprofile`)}>
              <img src="/Images/fileAdd.png" alt="file" width="30px" height="28px" />
             <p>Edit Profile</p>
             <MdOutlineKeyboardArrowRight className={styles.icon} />
           </div>
 
-          <div className={styles.section}>
+          <div className={styles.section}  onClick={() => navigate(`/help`)}>
           <img src="/Images/fileAdd.png" alt="file" width="30px" height="28px" />
             <p>Help</p>
             <MdOutlineKeyboardArrowRight className={styles.icon} />

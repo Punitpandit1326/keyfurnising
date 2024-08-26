@@ -19,23 +19,23 @@
 
 .main_section {
   width: 96%;
-  margin: 0 auto 50px;
+  margin: 0 auto 20px;
 
-  & h6 {
-    padding: 20px 0 0;
-    color: #000;
-    font-family: Onest;
-    font-size: 1.1rem;
-    font-weight: 600;
+  .scrollable_content {
+    width: 100%;
+    position: relative;
+    overflow-y: scroll;
+    height: calc(100vh - 120px);
+    padding: 20px 15px;
   }
 
   .child_section {
-    margin: 20px 0;
+    margin: 10px 0;
 
     & p {
       color: #000;
       font-family: Onest;
-      font-size: 0.9rem;
+      font-size: 0.97rem;
       font-weight: 400;
       margin: 0;
     }
@@ -113,7 +113,7 @@
   margin: 40px 0 20px;
 
   & h6 {
-    color: #000;
+    margin: 0;
     font-family: Onest;
     font-size: 0.9rem;
     font-weight: 400;

@@ -193,7 +193,7 @@ const MyOrders = () => {
 
           {activeTab === "Cancelled" && (
             <div className={styles.active_section}>
-              <div className={styles.child_section}>
+              <div className={styles.child_section}  onClick={() => navigate(`/orderhistory`)}>
                 <img src="/images/yellow-chair.png" alt="yellow-chair" />
                 <div className={styles.info}>
                   <h6>Frank Gehry wiggle Chair</h6>

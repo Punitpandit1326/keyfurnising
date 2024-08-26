@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const OrderHistory = () => {
   const navigate = useNavigate();
+
   return (
     <React.Fragment>
       <Header title="Order History" />
@@ -54,7 +55,7 @@ const OrderHistory = () => {
             className={styles.input_section}
             onClick={() => navigate(`/orderdetails`)}
           >
-            <p>View Order Details</p>
+            <p>Rate this product</p>
             <IoIosArrowForward className={styles.icon_right} />
           </div>
           <div className={styles.input_section}>

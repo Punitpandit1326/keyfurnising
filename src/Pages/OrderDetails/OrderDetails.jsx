@@ -3,8 +3,11 @@ import styles from "./details.module.css";
 import Header from "../../Components/Header/Header";
 import Step from "../../Components/Steeper/Step";
 import { FaChevronRight } from "react-icons/fa6";
+import { IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const OrderDetails = () => {
+  const navigate = useNavigate();
   return (
     <React.Fragment>
       <Header title="Order Details" />
@@ -28,19 +31,18 @@ const OrderDetails = () => {
           <hr />
         </div>
 
-        
         <div className="mt-5">
           <Step />
           <hr className="m-0" />
         </div>
 
-        <div className={styles.rate_section}>
+        {/* <div className={styles.rate_section}>
           <h6>Rate this Product</h6>
           <span>
             <FaChevronRight className={styles.icon} />
           </span>
         </div>
-        <hr className="m-0" />
+        <hr className="m-0" /> */}
 
         <div className={styles.shipping_section}>
           <h5>Shipping Details</h5>
@@ -75,6 +77,17 @@ const OrderDetails = () => {
           <div className="d-flex justify-content-between">
             <p>Total amount</p>
             <p>₹2549</p>
+          </div>
+        </div>
+
+        <div className={styles.box}>
+          <div className={styles.input_section} onClick={() => navigate(`/review`)}>
+            <p>View Order Details</p>
+            <IoIosArrowForward className={styles.icon_right} />
+          </div>
+          <div className={styles.input_section} onClick={() => navigate(`/product-return`)}>
+            <p>Return & refund</p>
+            <IoIosArrowForward className={styles.icon_right} />
           </div>
         </div>
       </div>

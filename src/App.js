@@ -28,6 +28,7 @@ import ChatSupport from "./Pages/ChatSupport/ChatSupport";
 import ProductReturn from "./Pages/ProductReturn/ProductReturn";
 import ProductReturn2 from "./Pages/ProductReturn2/ProductReturn2";
 import Notification from "./Pages/Notification/Notification";
+import TroublePage from "./Pages/TroublePage/TroublePage";
 
 function App() {
   const [splash, setSplash] = useState(true);
@@ -65,6 +66,7 @@ function App() {
       <Route path="/" element={<Intro />} />
       <Route path="/login" element={<Login />} />
       <Route path="/otp" element={<Otp />} />
+      <Route path="/any-trouble-page" element={<TroublePage />} />
       <Route path="/home" element={<Home />} />
       <Route path="/category" element={<Category />} />
       <Route path="/category/categorydetails" element={<CategoryDetails />} />

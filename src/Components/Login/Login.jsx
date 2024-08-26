@@ -21,7 +21,7 @@ const Login = () => {
           <div className={styles.btn_section}>
             <input type="text" placeholder="Enter phone number" />
             <button onClick={next}>Get Started</button>
-            <Link to={"/otp"}>Any Trouble with login ?</Link>
+            <Link to={"/any-trouble-page"}>Any Trouble with login ?</Link>
             <p>
               By signing up , you agree to our <span>Terms</span>. See how we
               use your data in our <span>Privacy Policy</span>. We Never Post to

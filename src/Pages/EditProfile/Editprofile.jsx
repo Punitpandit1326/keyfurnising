@@ -7,7 +7,7 @@ import Header from "../../Components/Header/Header";
 import { MdOutlineCameraAlt } from "react-icons/md";
 
 const Editprofile = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <React.Fragment>
       {/* <div onClick={() => navigate(-1)} className={styles.head_section}>
@@ -21,17 +21,12 @@ const Editprofile = () => {
       <div className={styles.scrollable_content}>
         <div className={styles.user_info}>
           <img src="/Images/user.png" alt="user" />
-          <div className={styles.add}>
-            {" "}
-            <MdOutlineCameraAlt className={styles.icon} /> Add
-          </div>
+          <div className={styles.add}> <MdOutlineCameraAlt className={styles.icon} /> Add </div>
         </div>
 
         <div className={styles.info_section}>
           <h6>Basic Info</h6>
-          <p>
-            Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis.
+          <p>Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
           </p>
         </div>
 
