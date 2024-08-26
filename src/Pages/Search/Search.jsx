@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./search.module.css";
 import { IoMdClose } from "react-icons/io";
+import Footer from "../../Components/Footer/Footer";
 
 const Search = () => {
   const [value, setValue] = useState("");
@@ -68,6 +69,7 @@ const Search = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </React.Fragment>
   );
 };

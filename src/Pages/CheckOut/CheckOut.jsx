@@ -10,9 +10,6 @@ import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
 import CouponModal from "./CouponModal/CouponModal";
 
-import { Offcanvas } from "react-bootstrap";
-import { BiSolidOffer } from "react-icons/bi";
-import { IoCopyOutline } from "react-icons/io5";
 
 const CheckOut = () => {
   const [show, setShow] = useState(false);

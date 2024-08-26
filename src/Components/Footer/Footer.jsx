@@ -17,6 +17,12 @@ const Footer = () => {
     if (item === "search") {
       handleSearch();
     }
+    if (item === "wishlist") {
+      handleWishlist();
+    }
+    if (item === "checkout") {
+      handlecart();
+    }
   };
 
   const handleClickNavigation = () => {
@@ -29,6 +35,14 @@ const Footer = () => {
 
   const handleSearch = () => {
     navigate(`/search`);
+  }
+
+  const handleWishlist = () => {
+    navigate(`/wishlist`);
+  }
+
+  const handlecart = () => {
+    navigate(`/checkout`);
   }
 
   return (
@@ -55,10 +69,10 @@ const Footer = () => {
           <p>Wishlist</p>
         </div>
         <div
-          onClick={() => handleItemClick("bag")}
-          className={activeItem === "bag" ? styles.active : ""}
+          onClick={() => handleItemClick("checkout")}
+          className={activeItem === "checkout" ? styles.active : ""}
         >
-          <img src="/images/bag.png" alt="bag" />
+          <img src="/images/checkout.png" alt="bag" />
           <p>Bag</p>
         </div>
         <div

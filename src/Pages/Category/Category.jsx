@@ -1,20 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styles from "./category.module.css";
 import { FaSignal } from "react-icons/fa";
 import { LuBatteryFull } from "react-icons/lu";
 import { IoFilterSharp } from "react-icons/io5";
-import { IoMdAlarm, IoIosWifi, IoMdBluetooth } from "react-icons/io";
-import { Col, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Footer from "../../Components/Footer/Footer";
+import { IoMdAlarm, IoIosWifi, IoMdBluetooth } from "react-icons/io";
+import Filter from "./Filter/Filter";
 
 const Category = () => {
   // const [time, setTime] = useState(new Date());
+const[show, setShow] = useState(false)
   const navigate = useNavigate();
 
   const handleClick = () => {
     navigate(`/category/categorydetails`);
   };
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   // useEffect(() => {
   //   const interval = setInterval(() => {
@@ -45,8 +49,8 @@ const Category = () => {
 
         <div className={styles.head_section}>
           <h6>Upholstery Furniture 1</h6>
-          <div className={styles.filter}>
-            {" "}
+          <Filter show={show} closeModal={handleClose}/>
+          <div className={styles.filter} onClick={handleShow}>
             <IoFilterSharp />
           </div>
         </div>

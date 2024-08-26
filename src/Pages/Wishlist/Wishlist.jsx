@@ -4,6 +4,7 @@ import { FaHeart } from "react-icons/fa";
 import { SlArrowLeft } from "react-icons/sl";
 import { useNavigate } from "react-router-dom";
 import { FiShoppingBag } from "react-icons/fi";
+import Footer from "../../Components/Footer/Footer";
 
 const Wishlist = () => {
   const navigate = useNavigate();
@@ -213,6 +214,7 @@ const Wishlist = () => {
           {activeTab === "Curtain" && <div></div>}
         </div>
       </div>
+      <Footer/>
     </React.Fragment>
   );
 };
