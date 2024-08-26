@@ -72,7 +72,7 @@ const Footer = () => {
           onClick={() => handleItemClick("checkout")}
           className={activeItem === "checkout" ? styles.active : ""}
         >
-          <img src="/images/checkout.png" alt="bag" />
+          <img src="/images/bag.png" alt="bag" />
           <p>Bag</p>
         </div>
         <div
