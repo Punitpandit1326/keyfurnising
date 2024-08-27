@@ -6,8 +6,8 @@ import Header from "../../Components/Header/Header";
 const ProductReturn2 = () => {
   const [selectedOption, setSelectedOption] = useState("");
 
-  const handleChange = (event) => {
-    setSelectedOption(event.target.value);
+  const handleChange = (e) => {
+    setSelectedOption(e.target.value);
   };
   return (
     <React.Fragment>
@@ -43,11 +43,7 @@ const ProductReturn2 = () => {
           <h6>Refund Amount</h6>
           <div className={styles.box}>
          
-              <input
-                type="radio"
-                name="option"
-                value="option1"
-                checked={selectedOption === "option1"}
+              <input type="radio" name="option" value="option1" checked={selectedOption === "option1"}
                 onChange={handleChange}
               />
   

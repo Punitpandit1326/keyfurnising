@@ -8,30 +8,32 @@ import { Link, useNavigate } from "react-router-dom";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
-import CouponModal from "./CouponModal/CouponModal";
 
+import { Offcanvas } from "react-bootstrap";
+import { BiSolidOffer } from "react-icons/bi";
+import HeaderClose from "../../Components/HeaderClose/HeaderClose";
 
 const CheckOut = () => {
   const [show, setShow] = useState(false);
-  const [time, setTime] = useState(new Date());
+  // const [time, setTime] = useState(new Date());
   const navigate = useNavigate();
 
   const handleClick = () => {
     navigate(`/payment`);
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTime(new Date());
-    }, 1000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setTime(new Date());
+  //   }, 1000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
-  const formattedTime = time.toLocaleTimeString("en-US", {
-    hour: "2-digit",
-    minute: "2-digit",
-  });
+  // const formattedTime = time.toLocaleTimeString("en-US", {
+  //   hour: "2-digit",
+  //   minute: "2-digit",
+  // });
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -96,7 +98,6 @@ const CheckOut = () => {
               <p>Enter coupon code or gift card</p>
               <span>Apply</span>
             </div>
-            <CouponModal show={show} closeModal={handleClose}/>
             <Link to={""} onClick={handleShow}>
               View All Coupons <MdOutlineKeyboardArrowRight />
             </Link>
@@ -130,6 +131,48 @@ const CheckOut = () => {
           </div>
         </div>
         <Footer />
+
+        {/* --------canvas------ */}
+
+        <Offcanvas
+          className={styles.drawer}
+          placement="bottom"
+          show={show}
+          onHide={handleClose}
+          enforceFocus={false}
+          backdrop={false}
+          scroll={true}
+        >
+          <Offcanvas.Header className={styles.header}>
+            <HeaderClose title="Coupon" closeModal={handleClose} />
+          </Offcanvas.Header>
+
+          <Offcanvas.Body>
+            <div className={`${styles.scrollable_content}`}>
+              <div className={styles.box}>
+                <h6>WELCOME200</h6>
+                <p>Add items worth ₹500 to unlock</p>
+                <div className={styles.off}>
+                  <BiSolidOffer className="text-danger" /> Get Upto 50% OFF{" "}
+                </div>
+                <div className={styles.code}>
+                  <h6>Apply Code</h6>
+                </div>
+              </div>
+
+              <div className={styles.box}>
+                <h6>WELCOME200</h6>
+                <p>Add items worth ₹500 to unlock</p>
+                <div className={styles.off}>
+                  <BiSolidOffer className="text-danger" /> Get Upto 50% OFF{" "}
+                </div>
+                <div className={styles.code}>
+                  <h6>Apply Code</h6>
+                </div>
+              </div>
+            </div>
+          </Offcanvas.Body>
+        </Offcanvas>
       </div>
     </React.Fragment>
   );

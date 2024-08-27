@@ -23,9 +23,9 @@ const Filter = ({ show, closeModal }) => {
         placement="bottom"
         show={show}
         onHide={closeModal}
-
+        backdrop={true}
       >
-        <Offcanvas.Header  className={styles.header}>
+        <Offcanvas.Header className={styles.header}>
           <HeaderClose title="Filters" closeModal={closeModal} />
         </Offcanvas.Header>
 
@@ -47,19 +47,17 @@ const Filter = ({ show, closeModal }) => {
             </div>
             <hr />
             <div className={styles.color}>
-            <h6>Colors</h6>
-        <Colors/>
+              <h6>Colors</h6>
+              <Colors />
             </div>
           </div>
 
           <div className={styles.btn_section}>
-        <button>Clear All</button>
-        <button>Show 92 Products</button>
-      </div>
+            <button>Clear All</button>
+            <button>Show 92 Products</button>
+          </div>
         </Offcanvas.Body>
-
       </Offcanvas>
-
     </React.Fragment>
   );
 };

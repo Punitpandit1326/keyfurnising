@@ -1,4 +1,4 @@
-.header {
+/* .header {
   margin: 10px;
   display: flex;
   justify-content: space-between;
@@ -15,11 +15,11 @@
     display: flex;
     gap: 10px;
   }
-}
+} */
 
 .main_section {
   width: 96%;
-  margin: 0 auto;
+  margin: 40px auto 0;
 
   & h6 {
     color: #000;

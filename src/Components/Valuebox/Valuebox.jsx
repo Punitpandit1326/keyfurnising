@@ -8,9 +8,9 @@ const ValueBox = () => {
   };
 
   const handleDecrease = () => {
-    setValue((prevValue) => prevValue - 1);
+    setValue((prevValue) => (prevValue > 0 ? prevValue - 1 : 0));
   };
-
+  
   return (
     <div style={{ display: "flex", alignItems: "center", marginTop: "-1px" }}>
       <h2
@@ -31,9 +31,9 @@ const ValueBox = () => {
           textAlign: "center",
           width: "22px",
           marginRight: "10px",
-          marginTop: "6px",
           border: "none",
           fontFamily: "Onest",
+          fontSize: ".8rem"
         }}
       />
       <h2

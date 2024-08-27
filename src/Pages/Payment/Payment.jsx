@@ -6,24 +6,24 @@ import { LuBatteryFull } from "react-icons/lu";
 import { Link } from "react-router-dom";
 
 const Payment = () => {
-  const [time, setTime] = useState(new Date());
+  // const [time, setTime] = useState(new Date());
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTime(new Date());
-    }, 1000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setTime(new Date());
+  //   }, 1000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
-  const formattedTime = time.toLocaleTimeString("en-US", {
-    hour: "2-digit",
-    minute: "2-digit",
-  });
+  // const formattedTime = time.toLocaleTimeString("en-US", {
+  //   hour: "2-digit",
+  //   minute: "2-digit",
+  // });
 
   return (
     <React.Fragment>
-      <div className={styles.header}>
+      {/* <div className={styles.header}>
         <p> {formattedTime}</p>
         <div className={styles.icon}>
           <IoMdAlarm />
@@ -32,7 +32,7 @@ const Payment = () => {
           <FaSignal />
           <LuBatteryFull style={{ marginTop: "-3px" }} size={22} />
         </div>
-      </div>
+      </div> */}
 
       <div className={styles.main_section}>
         <h6>Acknowledgement </h6>
@@ -46,7 +46,7 @@ const Payment = () => {
 
         <div className={styles.btn_section}>
           <button>Explore More Products</button>
-          <Link to={""}>View Order Details</Link>
+          <Link to={"/orderdetails"}>View Order Details</Link>
         </div>
       </div>
     </React.Fragment>
