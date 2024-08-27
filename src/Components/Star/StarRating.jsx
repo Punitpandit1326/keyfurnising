@@ -20,8 +20,8 @@ const StarRating = ({ totalStars = 5 }) => {
             />
             <svg
               className="star"
-              width="15"
-              height="15"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill={ratingValue <= (hover || rating) ? "#D61C4E" : "#e4e5e9"}
               onMouseEnter={() => setHover(ratingValue)}

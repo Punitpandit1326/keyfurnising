@@ -1,0 +1,23 @@
+
+.main {
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;    
+}
+
+.red, .organe, .green, .sea, .yellow, .blue, .brown {
+  width: 60px;            
+  height: 60px;        
+  border-radius: 50%;
+  display: inline-block;   
+}
+
+.red { background-color: red; }
+.organe { background-color: orange; }
+.green { background-color: green; }
+.sea { background-color: #0c9797; } 
+.yellow { background-color: yellow; }
+.blue { background-color: blue; }
+.brown { background-color: brown; }

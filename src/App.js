@@ -30,6 +30,7 @@ import ProductReturn2 from "./Pages/ProductReturn2/ProductReturn2";
 import Notification from "./Pages/Notification/Notification";
 import TroublePage from "./Pages/TroublePage/TroublePage";
 import Search from "./Pages/Search/Search";
+import MyCart from "./Pages/MyCart/MyCart";
 
 function App() {
   const [splash, setSplash] = useState(true);
@@ -71,6 +72,7 @@ function App() {
       <Route path="/home" element={<Home />} />
       <Route path="/category" element={<Category />} />
       <Route path="/category/categorydetails" element={<CategoryDetails />} />
+      <Route path="/cart" element={<MyCart />} />
       <Route path="/checkout" element={<CheckOut />} />
       <Route path="/payment" element={<Payment />} />
       <Route path="/profile" element={<Profile />} />

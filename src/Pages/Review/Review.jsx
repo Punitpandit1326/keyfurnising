@@ -22,7 +22,7 @@ const Review = () => {
 
       <div className={`${styles.scrollable_content}`}>
         <h6>How would you rate it</h6>
-        <StarRating />
+        <StarRating/>
 
         {/* --------box-section------- */}
 

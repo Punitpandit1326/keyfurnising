@@ -1,5 +1,6 @@
 .active {
-  color: #d61cd6; /* Example active color */
+  filter: #e61a57; 
+
 }
 
 .footer_bottom div img {
@@ -8,7 +9,8 @@
 }
 
 .active img {
-  filter: none; /* Show the icon in full color */
+ filter: brightness(0) invert(1); 
+
 }
 
 /* -------footer-section------- */

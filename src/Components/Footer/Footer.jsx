@@ -20,7 +20,7 @@ const Footer = () => {
     if (item === "wishlist") {
       handleWishlist();
     }
-    if (item === "checkout") {
+    if (item === "cart") {
       handlecart();
     }
   };
@@ -42,7 +42,7 @@ const Footer = () => {
   }
 
   const handlecart = () => {
-    navigate(`/checkout`);
+    navigate(`/cart`);
   }
 
   return (
@@ -69,8 +69,8 @@ const Footer = () => {
           <p>Wishlist</p>
         </div>
         <div
-          onClick={() => handleItemClick("checkout")}
-          className={activeItem === "checkout" ? styles.active : ""}
+          onClick={() => handleItemClick("cart")}
+          className={activeItem === "cart" ? styles.active : ""}
         >
           <img src="/images/bag.png" alt="bag" />
           <p>Bag</p>

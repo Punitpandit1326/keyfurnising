@@ -42,7 +42,7 @@ const ProductReturn2 = () => {
         <div className={styles.product_section}>
           <h6>Refund Amount</h6>
           <div className={styles.box}>
-            <form>
+         
               <input
                 type="radio"
                 name="option"
@@ -50,7 +50,7 @@ const ProductReturn2 = () => {
                 checked={selectedOption === "option1"}
                 onChange={handleChange}
               />
-            </form>
+  
             <div>
               <p>Original Payment Method</p>
               <span>Refund Within 5-7 days of pickup</span>

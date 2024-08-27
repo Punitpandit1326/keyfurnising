@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./filter.module.css";
 import { Offcanvas } from "react-bootstrap";
 import { BiSolidOffer } from "react-icons/bi";
@@ -7,6 +7,7 @@ import { HiOutlineGlobeAsiaAustralia } from "react-icons/hi2";
 import { MdOutlineCurtainsClosed } from "react-icons/md";
 import { FaCouch } from "react-icons/fa";
 import PriceRanges from "../../../Components/PriceRanges/PriceRanges";
+import Colors from "../../../Components/Colors/Colors";
 
 const Filter = ({ show, closeModal }) => {
   const categories = [
@@ -22,8 +23,9 @@ const Filter = ({ show, closeModal }) => {
         placement="bottom"
         show={show}
         onHide={closeModal}
+
       >
-        <Offcanvas.Header className={styles.header}>
+        <Offcanvas.Header  className={styles.header}>
           <HeaderClose title="Filters" closeModal={closeModal} />
         </Offcanvas.Header>
 
@@ -43,9 +45,21 @@ const Filter = ({ show, closeModal }) => {
               <h6>Price</h6>
               <PriceRanges />
             </div>
+            <hr />
+            <div className={styles.color}>
+            <h6>Colors</h6>
+        <Colors/>
+            </div>
           </div>
+
+          <div className={styles.btn_section}>
+        <button>Clear All</button>
+        <button>Show 92 Products</button>
+      </div>
         </Offcanvas.Body>
+
       </Offcanvas>
+
     </React.Fragment>
   );
 };

@@ -88,10 +88,13 @@
       border: 1px solid #d61c4e;
       padding: 20px;
 
-      & input[type="radio"] {
+    &  input[type="radio"] {
         background-color: #000;
         border: 1px solid #d9d9d9;
+        width: 20px;  
+        height: 20px; 
       }
+      
 
       & p {
         color: #000;
@@ -127,10 +130,15 @@
     }
   }
 
-  & button {
-    margin: 30px 0 0;
+
+  button {
+    position: fixed; 
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    margin: 0;
     display: flex;
-    width: 100%;
+    width: 90%;
     padding: 10px;
     justify-content: center;
     align-items: center;
@@ -140,6 +148,7 @@
     height: 50px;
     background: #d61c4e;
   }
+  
 
   & a {
     color: #d61c4e;
@@ -148,4 +157,47 @@
     font-weight: 400;
     text-decoration: none;
   }
+}
+
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.radioInput {
+  display: none; /* Hide the default radio button */
+}
+
+.radioButton {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #d9d9d9;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 10px;
+  position: relative;
+}
+
+.radioInput:checked + .radioButton {
+  background-color: #00f; /* Color when checked */
+}
+
+.radioButton::after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff; /* Inner circle color */
+  position: absolute;
+  top: 4px;
+  left: 4px;
 }

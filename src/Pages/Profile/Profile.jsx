@@ -2,9 +2,13 @@ import React from "react";
 import { HiUser } from "react-icons/hi2";
 import { BsHeart } from "react-icons/bs";
 import styles from "./profile.module.css";
+import { MdOutlineModeEdit } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { FiShoppingBag } from "react-icons/fi";
-import Footer from "../../Components/Footer/Footer"
+import Footer from "../../Components/Footer/Footer";
+import { RiDiscountPercentLine } from "react-icons/ri";
+import { IoIosHelpCircleOutline } from "react-icons/io";
+import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Profile = () => {
@@ -35,12 +39,18 @@ const Profile = () => {
 
         <div className={styles.main_hero_section}>
           <div className={styles.cards} onClick={() => navigate(`/wishlist`)}>
-            <span>  <BsHeart /> </span>
+            <span>
+              {" "}
+              <BsHeart />{" "}
+            </span>
             <p>My Wishlist</p>
           </div>
 
           <div className={styles.cards} onClick={() => navigate(`/myorder`)}>
-            <span>  <FiShoppingBag />  </span>
+            <span>
+              {" "}
+              <FiShoppingBag />{" "}
+            </span>
             <p>My Orders</p>
           </div>
         </div>
@@ -48,20 +58,23 @@ const Profile = () => {
         {/* ------Suppoort-section-------- */}
 
         <div className={styles.bottom_section}>
-          <div className={styles.section} onClick={() => navigate(`/editprofile`)}>
-             <img src="/Images/fileAdd.png" alt="file" width="30px" height="28px" />
+          <div
+            className={styles.section}
+            onClick={() => navigate(`/editprofile`)}
+          >
+            <MdOutlineModeEdit size={22} />
             <p>Edit Profile</p>
             <MdOutlineKeyboardArrowRight className={styles.icon} />
           </div>
 
-          <div className={styles.section}  onClick={() => navigate(`/help`)}>
-          <img src="/Images/fileAdd.png" alt="file" width="30px" height="28px" />
+          <div className={styles.section} onClick={() => navigate(`/help`)}>
+            <IoIosHelpCircleOutline size={22}  />
             <p>Help</p>
             <MdOutlineKeyboardArrowRight className={styles.icon} />
           </div>
 
-          <div className={styles.section}>
-          <img src="/Images/fileAdd.png" alt="file" width="30px" height="28px" />
+          <div className={styles.section} onClick={() => navigate(`/coupon`)}>
+            <RiDiscountPercentLine size={22}  />
             <p>Coupons & Promotional deals</p>
             <MdOutlineKeyboardArrowRight className={styles.icon} />
           </div>
@@ -70,7 +83,12 @@ const Profile = () => {
             className={styles.section}
             onClick={() => navigate(`/myaddress`)}
           >
-            <img src="/Images/fileAdd.png" alt="file" width="30px" height="28px" />
+            <img
+              src="/Images/home.png"
+              alt="file"
+              width="26px"
+              height="24px"
+            />
             <p>Manage Addresses</p>
             <MdOutlineKeyboardArrowRight className={styles.icon} />
           </div>
@@ -79,7 +97,7 @@ const Profile = () => {
             className={styles.section}
             onClick={() => navigate(`/chatsupport`)}
           >
-            <img src="/Images/fileAdd.png" alt="file" width="30px" height="28px" />
+            <IoChatboxEllipsesOutline size={22}/>
             <p>Chat with us</p>
             <MdOutlineKeyboardArrowRight className={styles.icon} />
           </div>
@@ -88,12 +106,11 @@ const Profile = () => {
         {/* ------leggal-section-------- */}
 
         <div className={styles.bottom_section_end}>
-    <button>Log Out</button>
-    <p>Version 1.0</p>
+          <button>Log Out</button>
+          <p>Version 1.0</p>
         </div>
 
-
-        <Footer/>
+        <Footer />
       </div>
     </React.Fragment>
   );

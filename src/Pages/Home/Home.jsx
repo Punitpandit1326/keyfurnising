@@ -29,7 +29,7 @@ const Home = () => {
 
 
 const handleClick = () => {
-  navigate(`/checkout`)
+  navigate(`/cart`)
 }
 
   return (

@@ -82,7 +82,7 @@ const OrderDetails = () => {
 
         <div className={styles.box}>
           <div className={styles.input_section} onClick={() => navigate(`/review`)}>
-            <p>View Order Details</p>
+            <p>Rate this product</p>
             <IoIosArrowForward className={styles.icon_right} />
           </div>
           <div className={styles.input_section} onClick={() => navigate(`/product-return`)}>

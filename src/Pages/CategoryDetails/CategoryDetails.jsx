@@ -10,7 +10,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Pagination, Navigation } from "swiper/modules";
 import StarRating from "../../Components/Star/StarRating";
 import React, { useEffect, useRef, useState } from "react";
-import ColorPicker from "../../Components/Color/ColorPicker";
+import ColorPicker from "../../Components/ColorPicker/ColorPicker";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 // import { IoMdAlarm, IoIosWifi, IoMdBluetooth } from "react-icons/io";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft, MdEdit,} from "react-icons/md";
