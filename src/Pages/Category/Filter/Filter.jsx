@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./filter.module.css";
 import { Offcanvas } from "react-bootstrap";
 import { BiSolidOffer } from "react-icons/bi";
@@ -6,10 +6,11 @@ import HeaderClose from "../../../Components/HeaderClose/HeaderClose";
 import { HiOutlineGlobeAsiaAustralia } from "react-icons/hi2";
 import { MdOutlineCurtainsClosed } from "react-icons/md";
 import { FaCouch } from "react-icons/fa";
+import PriceRanges from "../../../Components/PriceRanges/PriceRanges";
 
 const Filter = ({ show, closeModal }) => {
   const categories = [
-    { name: "Upholstery Curtains", icon: <  MdOutlineCurtainsClosed/> },
+    { name: "Upholstery Curtains", icon: <MdOutlineCurtainsClosed /> },
     { name: "Upholstery Furniture", icon: <FaCouch /> },
     { name: "Furniture", icon: <HiOutlineGlobeAsiaAustralia /> },
   ];
@@ -36,6 +37,11 @@ const Filter = ({ show, closeModal }) => {
                   <span className={styles.categoryName}>{category.name}</span>
                 </div>
               ))}
+            </div>
+            <hr />
+            <div className={styles.ranges}>
+              <h6>Price</h6>
+              <PriceRanges />
             </div>
           </div>
         </Offcanvas.Body>

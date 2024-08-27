@@ -65,5 +65,17 @@
     font-size: 0.8rem;
     font-weight: 400;
   }
+
+  .ranges{
+    padding: 0;
+
+    & h6 {
+      font-family: Onest;
+      font-size: 1rem;
+      font-weight: 500;
     }
+
+  }  
+}
+
 }
