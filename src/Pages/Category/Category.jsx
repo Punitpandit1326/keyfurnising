@@ -143,25 +143,6 @@ const[show, setShow] = useState(false)
               </div>
             </div>
 
-            {/* 
-          <div onClick={handleClick}>
-            <div className={styles.card_section_4}>
-              <img src="/images/sofa-4.png" alt="sofa" />
-              <h6>Modern Sofa : Frank Gehry wiggle Chair </h6>
-              <div className="d-flex gap-2">
-                <p>
-                  <span> ₹ 2999 </span>₹ 1999
-                </p>
-                <div className={styles.offer}>50%</div>
-              </div>
-            </div>
-            <div className={styles.rating_section_4}>
-              <img src="/images/star.png" alt="star" />
-              <p>
-                4.5 <span>(45)</span>
-              </p>
-            </div>
-          </div> */}
           </div>
         </div>
       </div>

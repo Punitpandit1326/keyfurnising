@@ -5,7 +5,7 @@
   
 
   .child_section {
-    margin: 10px 0;
+    margin: .6rem 0;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -17,14 +17,14 @@
       font-family: Onest;
       font-size: 1.3rem;
       font-weight: 600;
-      padding: 0 20px;
+      padding: 0 1.2rem;
     }
 
 
     & input {
-      width: 330px;
+      width: 20.6rem;
       padding: 10px;
-      height: 51px;
+      height: 3.1rem;
       border-radius: 30px;
       border: 1px solid #d9d9d9;
       background: #fff;
@@ -41,13 +41,13 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
-      margin: 0 20px;
+      margin: 0 1.2rem;
     }
 
     & button {
-      width: 330px;
+      width: 20.6rem;
       padding: 10px;
-      height: 52px;
+      height: 3.2rem;
       border: none;
       gap: 10px;
       border-radius: 30px;
@@ -103,7 +103,7 @@
     flex-direction: column;
 
     .child_section {
-      margin-top: 20px;
+      margin-top: 1.2rem;
 
       & input {
         width: auto;
@@ -124,13 +124,13 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-        margin: 0 20px;
+        margin: 0 1.2rem;
       }
 
       & button {
         width: auto;
         padding: 10px;
-        height: 52px;
+        height: 3.2rem;
         border: none;
         gap: 10px;
         border-radius: 30px;

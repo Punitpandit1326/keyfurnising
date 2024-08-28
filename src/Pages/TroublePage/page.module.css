@@ -1,18 +1,18 @@
 .main_section {
-  margin: 30px 20px;
+  margin: 1.8rem 1.2rem;
 
 
   & h6 {
     font-family: Onest;
     font-size: 1.1rem;
     font-weight: 600;
-    padding-bottom: 20px;
+    padding-bottom: 1.2rem;
   }
 
   .input_section {
-    margin: 10px 0;
-    padding: 15px;
-    height: 50px;
+    margin: .6rem 0;
+    padding: .9rem;
+    height: 3.1rem;
     border-radius: 9px;
     border: 1px solid #d9d9d9;
     background: #fff;
@@ -27,14 +27,14 @@
 
     .icon_right {
       position: absolute;
-      top: 15px;
-      right: 5px;
+      top: .9rem;
+      right: 0.3rem;
       color: #d61c4e;
     }
   }
 
   .bottom_section {
-    margin-top: 280px;
+    margin-top: 17.5rem;
 
 
     & span {

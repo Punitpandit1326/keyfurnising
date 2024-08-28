@@ -47,7 +47,7 @@ const Footer = () => {
 
   return (
     <div>
-      <hr style={{ color: "#d9d9d9", height: "2px" }} />
+      {/* <hr style={{ color: "#d9d9d9", height: "2px" }} /> */}
       <div className={`${styles.footer_bottom} ${styles.fixed_footer}`}>
         <div onClick={() => handleItemClick("home")}
           className={activeItem === "home" ? styles.active : ""}

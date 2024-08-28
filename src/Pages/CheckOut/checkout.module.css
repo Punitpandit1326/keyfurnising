@@ -218,18 +218,15 @@
   }
 }
 
-
-
 /* ---------canvas---------- */
 
-
 .drawer {
-  width: auto; 
-  border-top-left-radius: 20px; 
+  width: auto;
+  border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   height: 500px;
 
-  .header{
+  .header {
     display: inline-block !important;
     width: 100%;
     padding: 1rem 0rem !important;
@@ -246,22 +243,22 @@
       font-size: 1rem;
       font-weight: 500;
     }
-  
+
     .box {
       margin: 0 0 20px;
       border-radius: 10px;
       border: 1px solid #d9d9d9;
       background: #fff;
       padding: 20px 0 12px;
-  
+
       & h6 {
         padding: 0 20px;
       }
-      
+
       & p {
         padding: 0 20px;
       }
-  
+
       .off {
         margin: 0 20px;
         display: flex;
@@ -277,24 +274,24 @@
         font-weight: 400;
       }
     }
-  
+
     .code {
       position: relative;
       padding: 40px 0 0;
       display: flex;
       justify-content: center;
       align-items: center;
-  
+
       & h6 {
         color: #000;
         font-family: Onest;
-        font-size: .87rem;
+        font-size: 0.87rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
       }
     }
-  
+
     .code::before {
       content: "";
       position: absolute;
@@ -305,7 +302,4 @@
       background-color: #d9d9d9;
     }
   }
-
 }
-
-
