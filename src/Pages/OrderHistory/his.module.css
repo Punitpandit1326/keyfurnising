@@ -2,12 +2,12 @@
   width: 100%;
   position: relative;
   overflow-y: scroll;
-  height: calc(100vh - 120px);
-  padding: 20px;
+  height: calc(100vh - 7.5rem);
+  padding: 1.2rem;
 
   .card_section {
     display: flex;
-    gap: 20px;
+    gap: 1.2rem;
     position: relative;
 
     & img {
@@ -15,15 +15,13 @@
     }
 
     & h6 {
-      padding-top: 5px;
-      color: #000;
+      padding-top: 0.31rem;
       font-family: Onest;
       font-size: 0.85rem;
       font-weight: 500;
     }
 
     & p {
-      color: #000;
       font-family: Onest;
       font-size: 0.8rem;
       font-weight: 500;
@@ -39,13 +37,13 @@
 
     .offer {
       display: flex;
-      width: 49px;
-      height: 21px;
-      padding: 6px 14px;
+      width: 3rem;
+      height: 1.31rem;
+      padding: 0.37rem 0.87rem;
       justify-content: center;
       align-items: center;
-      gap: 10px;
-      border-radius: 6px;
+      gap: 0.62rem;
+      border-radius: 0.37rem;
       background: #d1ffc7;
       color: #55b440;
       font-family: Onest;
@@ -55,15 +53,15 @@
 
     .star_secx {
       position: absolute;
-      right: 0;
-      top: 60%;
+      right: 0.43rem;
+      top: 3.7rem;
     }
   }
 
   .input_section {
-    margin: 25px 0;
-    padding: 15px;
-    height: 50px;
+    margin: 1.56rem 0;
+    padding: 0.9rem;
+    height: 3.1rem;
     border-radius: 9px;
     border: 1px solid #d9d9d9;
     background: #fff;
@@ -78,8 +76,8 @@
 
     .icon_right {
       position: absolute;
-      top: 15px;
-      right: 5px;
+      top: .97rem;
+      right: 0.31rem;
       color: #d61c4e;
     }
   }
@@ -87,14 +85,13 @@
 
 .section h6 {
   margin: 0;
-  color: #000;
   font-family: Onest;
   font-size: 0.97rem;
   font-weight: 500;
 }
 
 .main_card {
-  margin-top: 20px;
+  margin-top: 1.2rem;
 
   .card {
     display: flex;
@@ -102,8 +99,7 @@
   }
 
   & h1 {
-    padding: 10px;
-    color: #000;
+    padding: 0.62rem;
     font-family: Onest;
     font-size: 1rem;
     font-weight: 500;
@@ -111,15 +107,14 @@
 
   .card_section_2 {
     & h6 {
-      padding-top: 10px;
-      color: #000;
+      padding-top: 0.62rem;
+
       font-family: Onest;
       font-size: 0.85rem;
       font-weight: 500;
     }
 
     & p {
-      color: #000;
       font-family: Onest;
       font-size: 0.8rem;
       font-weight: 500;
@@ -135,13 +130,13 @@
 
     .offer {
       display: flex;
-      width: 49px;
-      height: 21px;
-      padding: 6px 14px;
+      width: 3rem;
+      height: 1.3rem;
+      padding: 0.37rem 0.87rem;
       justify-content: center;
       align-items: center;
-      gap: 10px;
-      border-radius: 6px;
+      gap: 0.62rem;
+      border-radius: 0.37rem;
       background: #d1ffc7;
       color: #55b440;
       font-family: Onest;
@@ -152,14 +147,14 @@
 
   .rating_section_2 {
     position: relative;
-    width: 78px;
-    bottom: 43%;
-    left: 5%;
+    width: 4.87rem;
+    bottom: 7.7rem;
+    left: 0.62rem;
     display: flex;
-    padding: 7px 8px;
+    padding: 0.43rem 0.5rem;
     align-items: center;
     gap: 3px;
-    border-radius: 7px;
+    border-radius: 0.43rem;
     background: #fff;
 
     & p {
@@ -182,7 +177,7 @@
     position: relative;
 
     & h6 {
-      padding-top: 10px;
+      padding-top: 0.62rem;
       color: #000;
       font-family: Onest;
       font-size: 0.85rem;
@@ -206,13 +201,13 @@
 
     .offer {
       display: flex;
-      width: 49px;
-      height: 21px;
-      padding: 6px 14px;
+      width: 3rem;
+      height: 1.3rem;
+      padding: 0.37rem 0.87rem;
       justify-content: center;
       align-items: center;
-      gap: 10px;
-      border-radius: 6px;
+      gap: 0.62rem;
+      border-radius: 0.37rem;
       background: #d1ffc7;
       color: #55b440;
       font-family: Onest;
@@ -223,11 +218,11 @@
 
   .rating_section_4 {
     position: absolute;
-    width: 78px;
-    bottom: -80px;
-    left: 28px;
+    width: 4.87rem;
+    bottom: -13.5rem;
+    left: 1.7rem;
     display: flex;
-    padding: 7px 8px;
+    padding: 0.43rem 0.5rem;
     align-items: center;
     gap: 3px;
     border-radius: 7px;

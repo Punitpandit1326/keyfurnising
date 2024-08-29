@@ -173,7 +173,7 @@
 
 .rating_section_2 {
   position: relative;
-  width: 3rem;
+  width: 5rem;
   bottom: 7.8rem;
   left: 0.62rem;
   display: flex;
@@ -201,7 +201,7 @@
 
 .card_section_3 {
   & h6 {
-    padding-top: .62rem;
+    padding-top: 0.62rem;
     color: #000;
     font-family: Onest;
     font-size: 0.85rem;
@@ -225,9 +225,9 @@
 
   .offer {
     display: flex;
-    width: 49px;
-    height: 21px;
-    padding: 6px 14px;
+    width: 3.0rem;
+    height: 1.3rem;
+    padding: 0.37rem 0.87rem;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -242,11 +242,11 @@
 
 .rating_section_3 {
   position: relative;
-  width: 78px;
-  bottom: 43%;
-  left: 5%;
+  width: 4.8rem;
+  bottom: 7.8rem;
+  left: 0.62rem;;
   display: flex;
-  padding: 7px 8px;
+  padding: 0.43rem 0.5rem;
   align-items: center;
   gap: 3px;
   border-radius: 7px;
@@ -270,11 +270,11 @@
 
 .rating_section_4 {
   position: relative;
-  width: 78px;
-  bottom: 43%;
-  left: 5%;
+  width: 5rem;
+  bottom: 7.8rem;
+  left: 0.62rem;
   display: flex;
-  padding: 7px 8px;
+  padding: 0.43rem 0.5rem;
   align-items: center;
   gap: 3px;
   border-radius: 7px;
@@ -282,7 +282,6 @@
 
   & p {
     margin: 0;
-    color: #000;
     font-size: 0.7rem;
     font-family: Onest;
     font-weight: 400;
@@ -297,9 +296,9 @@
 
   .offer {
     display: flex;
-    width: 49px;
-    height: 21px;
-    padding: 6px 14px;
+    width: 3.0rem;
+    height: 1.3rem;
+    padding: 0.37rem 0.87rem;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -315,6 +314,6 @@
 .scrollable_content {
   position: relative;
   overflow-y: scroll;
-  height: calc(100vh - 120px);
-  padding: 10px 0;
+  height: calc(100vh - 7.5rem);
+  padding: 0.62rem 0;
 }

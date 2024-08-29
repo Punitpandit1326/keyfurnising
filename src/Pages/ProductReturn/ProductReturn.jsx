@@ -49,7 +49,7 @@ const ProductReturn = () => {
             <Form.Control
               as="textarea"
               rows={10}
-              cols={60}
+              cols={40}
               placeholder="Type Something.."
             />
           </Form.Group>

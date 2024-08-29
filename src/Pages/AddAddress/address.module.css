@@ -2,22 +2,22 @@
   width: 100%;
   position: relative;
   overflow-y: scroll;
-  height: calc(100vh - 120px);
-  padding: 20px;
-  margin-top: 20px;
+  height: calc(100vh - 7.5rem);
+  padding: 1.2rem;
+  margin-top: 1.2rem;
 
   .buttonGroup {
     display: flex;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 0.62rem;
   }
 
   .addressButton {
     font-family: Onest;
     font-size: 0.8rem;
     font-weight: 500;
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: 0.62rem 1.2rem;
+    border-radius: 0.62rem;
     border: 1px solid #ccc;
     background-color: #fff;
     cursor: pointer;
@@ -30,25 +30,25 @@
   }
 
   .form_section {
-    margin: 20px 0;
+    margin: 1.2rem 0;
 
     & input {
-      height: 45px;
+      height: 2.8rem;
       width: 100%;
-      padding: 10px;
+      padding: 0.62rem;
     }
 
     & button {
-      margin: 30px 0 0;
+      margin: 1.8rem 0 0;
       display: flex;
       width: 100%;
-      padding: 10px;
+      padding: 0.62rem;
       justify-content: center;
       align-items: center;
       border-radius: 9px;
       color: #fff;
       border: none;
-      height: 50px;
+      height: 3.1rem;
       background: #d61c4e;
     }
   }

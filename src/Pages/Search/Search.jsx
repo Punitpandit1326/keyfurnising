@@ -9,8 +9,7 @@ const Search = () => {
 
   // Load search history from localStorage when the component mounts
   useEffect(() => {
-    const savedHistory =
-      JSON.parse(localStorage.getItem("searchHistory")) || [];
+    const savedHistory = JSON.parse(localStorage.getItem("searchHistory")) || [];
     setSearchHistory(savedHistory);
   }, []);
 
@@ -25,10 +24,7 @@ const Search = () => {
 
   const handleKeyDown = (e) => {
     if (
-      e.key === "Enter" &&
-      value.trim() !== "" &&
-      !searchHistory.includes(value)
-    ) {
+      e.key === "Enter" && value.trim() !== "" && !searchHistory.includes(value)) {
       setSearchHistory([...searchHistory, value]);
       setValue("");
     }
@@ -54,16 +50,9 @@ const Search = () => {
           <p>Recent Search</p>
           <hr />
           <div className={styles.scrollable_content}>
-            {searchHistory.map((entry, index) => (
-              <div key={index} className={styles.search_entry}>
+            {searchHistory.map((entry, index) => (<div key={index} className={styles.search_entry}>
                <span>{entry}</span>
-                <span>
-                  {" "}
-                  <IoMdClose
-                    onClick={() => handleDeleteClick(index)}
-                    className={styles.delete_button}
-                  />
-                </span>
+                <span>    <IoMdClose onClick={() => handleDeleteClick(index)} className={styles.delete_button}/> </span>
               </div>
             ))}
           </div>

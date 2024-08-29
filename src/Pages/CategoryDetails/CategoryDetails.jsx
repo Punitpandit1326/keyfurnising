@@ -13,7 +13,11 @@ import React, { useEffect, useRef, useState } from "react";
 import ColorPicker from "../../Components/ColorPicker/ColorPicker";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 // import { IoMdAlarm, IoIosWifi, IoMdBluetooth } from "react-icons/io";
-import { MdKeyboardArrowRight, MdKeyboardArrowLeft, MdEdit,} from "react-icons/md";
+import {
+  MdKeyboardArrowRight,
+  MdKeyboardArrowLeft,
+  MdEdit,
+} from "react-icons/md";
 
 const CategoryDetails = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -33,49 +37,20 @@ const CategoryDetails = () => {
     "/Images/chair-4.png",
   ];
 
-
-
-  // Ref to access Swiper instance
   const swiperRef = useRef(null);
 
-  // Handle Swiper slide change
   const handleSlideChange = (swiper) => {
     const index = swiper.activeIndex;
     setActiveIndex(index);
   };
 
-  // Handle thumbnail click
   const handleThumbnailClick = (index) => {
     setActiveIndex(index);
-    swiperRef.current?.slideTo(index); 
+    swiperRef.current?.slideTo(index);
   };
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setTime(new Date());
-  //   }, 1000);
-
-  //   return () => clearInterval(interval);
-  // }, []);
-
-  // const formattedTime = time.toLocaleTimeString("en-US", {
-  //   hour: "2-digit",
-  //   minute: "2-digit",
-  // });
 
   return (
     <React.Fragment>
-      {/* <div className={styles.header}>
-          <p> {formattedTime}</p>
-          <div className={styles.icon}>
-            <IoMdAlarm />
-            <IoMdBluetooth />
-            <IoIosWifi />
-            <FaSignal />
-            <LuBatteryFull style={{ marginTop: "-3px" }} size={22} />
-          </div>
-        </div> */}
-
       <div className={styles.head_section}>
         <h6>
           <SlArrowLeft onClick={() => navigate(-1)} /> Product Details
@@ -88,18 +63,14 @@ const CategoryDetails = () => {
 
       <div className={`${styles.scrollable_content}`}>
         <div className={styles.slider_section}>
-
           {/* ----------swiper-section--------- */}
 
           <div className={styles.swiperContainer}>
-            <Swiper
-              navigation={true}
-              modules={[Navigation]}
-              className="mySwiper"
-              onSlideChange={handleSlideChange} 
-              initialSlide={activeIndex} 
+            <Swiper navigation={true} modules={[Navigation]} className="mySwiper"
+              onSlideChange={handleSlideChange}
+              initialSlide={activeIndex}
               onSwiper={(swiper) => {
-                swiperRef.current = swiper; 
+                swiperRef.current = swiper;
               }}
             >
               {images.map((img, index) => (
@@ -141,7 +112,7 @@ const CategoryDetails = () => {
               </p>
               <div className={styles.offer}>50%</div>
             </div>
-            <div className={styles.rating_section}>
+            <div className={styles.rating_section_top}>
               <img src="/images/star.png" alt="star" />
               <p> 4.5 </p>
             </div>
@@ -230,7 +201,7 @@ const CategoryDetails = () => {
               </p>
             </div>
             <div className={styles.right}>
-              <div className="d-flex">
+              <div className="d-flex gap-1">
                 <p>5 &#9733;</p>
                 <ProgressBar variant="success" now={60} />
                 <span>75,020</span>
@@ -349,7 +320,7 @@ const CategoryDetails = () => {
       </div>
 
       <div className={styles.btn_section}>
-        <button onClick={handleclick}>Add To Cart</button>
+        <button onClick={() => navigate(`/cart`)}>Add To Cart</button>
         <button onClick={handleclick}>Buy Now</button>
       </div>
     </React.Fragment>

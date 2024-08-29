@@ -1,25 +1,8 @@
-/* .header {
-  margin: 10px;
-  display: flex;
-  justify-content: space-between;
 
-  & p {
-    color: #353535;
-    text-align: center;
-    font-family: Onest;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-
-  .icon {
-    display: flex;
-    gap: 10px;
-  }
-} */
 
 .main_section {
   width: 96%;
-  margin: 40px auto 0;
+  margin: 2.5rem auto 0;
 
   & h6 {
     color: #000;
@@ -53,8 +36,8 @@
   }
 
   .img_sec {
-    width: 137px;
-    height: 137px;
+    width: 8.5rem;
+    height: 8.5rem;
     border-radius: 50%;
     background: #d61c4e;
   }
@@ -70,10 +53,10 @@
       margin: 0;
       display: flex;
       width: 95%;
-      height: 45px;
+      height: 2.8rem;
       justify-content: center;
       align-items: center;
-      gap: 9.112px;
+      gap: 9px;
       border-radius: 9px;
       background: #d61c4e;
       color: #fff;

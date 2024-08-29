@@ -1,25 +1,8 @@
-.header {
-  margin: 10px;
-  display: flex;
-  justify-content: space-between;
 
-  & p {
-    color: #353535;
-    text-align: center;
-    font-family: Onest;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-
-  .icon {
-    display: flex;
-    gap: 10px;
-  }
-}
 
 .head_section {
-  margin: 25px 0 0;
-  padding: 10px 20px;
+  margin: 1.5rem 0 0;
+  padding: 0.62rem 1.25rem;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #d9d9d9;
@@ -39,7 +22,7 @@
   width: 100%;
   z-index: 1000;
   background-color: white;
-  padding: 10px 20px;
+  padding: 0.62rem 1.2rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -48,22 +31,21 @@
   gap: 15px;
 
   & img {
-    width: 20px;
-    height: 20px;
+    width: 1.2rem;
+    height: 1.2rem;
   }
 }
 
 .slider_section {
   position: relative;
-  /* margin: 20px 0; */
-  padding: 10px 0 20px;
+  padding: 0.6rem 0 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #f4f4f4;
 
-  .left_arr {
+  /* .left_arr {
     position: absolute;
     top: 39%;
     left: 10%;
@@ -75,11 +57,11 @@
     top: 39%;
     right: 10%;
     font-size: 2rem;
-  }
+  } */
 }
 
 .des_section {
-  margin: 10px 0;
+  margin: 0.62rem 0;
 
   & h6 {
     color: #000;
@@ -105,24 +87,24 @@
 
   .offer {
     display: flex;
-    width: 49px;
-    height: 21px;
-    padding: 6px 14px;
+    width: 3.0rem;
+    height: 1.3rem;
+    padding: 0.37rem 0.87rem;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 0.62rem;
     border-radius: 6px;
     background: #d1ffc7;
     color: #55b440;
     font-family: Onest;
     font-size: 0.7rem;
     font-weight: 500;
-    margin-left: 10px;
+    margin-left: 0.62rem;
   }
 
   .rating_section {
     display: flex;
-    padding: 0 8px;
+    padding: 0 0.5rem;
     align-items: center;
     gap: 3px;
     border-radius: 7px;
@@ -138,11 +120,10 @@
 }
 
 .variant_section {
-  margin: 20px 0 10px;
+  margin: 1.2rem 0 0.62rem;
 
   & p {
-    margin: 10px 0;
-    color: #000;
+    margin: 0.62rem 0;
     font-family: Onest;
     font-size: 0.9rem;
     font-weight: 500;
@@ -152,11 +133,11 @@
     display: flex;
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 0.62rem;
     justify-content: space-between;
     align-items: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 0.62rem;
     background: #f9f9f9;
   }
 
@@ -168,7 +149,7 @@
   }
 
   & h6 {
-    margin: 10px 0;
+    margin: 0.62rem 0;
     color: #00b55b;
     font-family: Onest;
     font-size: 0.8rem;
@@ -179,8 +160,9 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+
     & p {
-      margin: 10px 0;
+      margin: 0.62rem 0;
       color: #000;
       font-family: Onest;
       font-size: 0.9rem;
@@ -190,7 +172,7 @@
 }
 
 .specification {
-  margin: 10px 0;
+  margin: 0.62rem 0;
   display: flex;
   flex-direction: column;
 
@@ -209,7 +191,7 @@
   }
 
   & ul {
-    padding-left: 15px;
+    padding-left: 0.9rem;
   }
 
   & li {
@@ -222,7 +204,7 @@
 
 .review_section {
   width: 100%;
-  margin: 10px 0;
+  margin: 0.62rem 0;
 
   .main_review {
     display: flex;
@@ -237,7 +219,7 @@
   }
 
   .left {
-    padding-right: 20px;
+    padding-right: 1.25rem;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -260,7 +242,7 @@
   }
 
   .right {
-    margin: 10px;
+    margin: 0.62rem;
 
     & p {
       margin: 0;
@@ -271,7 +253,7 @@
     }
 
     & span {
-      padding-top: 5px;
+      padding-top: 0.3rem;
       color: #898989;
       text-align: center;
       font-family: Onest;
@@ -282,10 +264,10 @@
 }
 
 .fab_section {
-  margin: 10px 0;
+  margin: 0.62rem 0;
 
   & h6 {
-    padding-top: 7px;
+    padding-top: 0.43rem;
     color: #d61c4e;
     font-family: Onest;
     font-size: 0.9rem;
@@ -293,7 +275,7 @@
   }
 
   & h5 {
-    padding: 10px 0;
+    padding: 0.62rem 0;
     color: #000;
     font-family: Onest;
     font-size: 0.8rem;
@@ -318,21 +300,21 @@
 
 .mat_sec {
   display: flex;
-  gap: 10px;
+  gap: 0.62rem;
 
   & img {
-    width: 45x;
-    height: 45px;
+    width: 2.8rem;
+    height: 2.8rem;
   }
 }
 
 .verfied_sec {
-  margin-top: 5px;
-  margin-left: 10px;
+  margin-top: 0.3rem;
+  margin-left: 0.62rem;
   display: flex;
-  width: 70px;
-  height: 25px;
-  padding: 10px;
+  width: 4.3rem;
+  height: 1.5rem;
+  padding: 0.62rem;
   justify-content: center;
   align-items: center;
   gap: 2px;
@@ -351,7 +333,7 @@
   justify-content: space-between;
 
   & p {
-    margin: 10px 0;
+    margin: 0.62rem 0;
     color: #000;
     font-family: Onest;
     font-size: 0.9rem;
@@ -360,12 +342,11 @@
 }
 
 .product_sec {
-  margin: 20px 10px 10px;
+  margin: 1.2rem 0.62rem 0.62rem;
   display: flex;
   justify-content: space-between;
 
   & p {
-    color: #000;
     font-family: Onest;
     font-size: 0.97rem;
     font-weight: 600;
@@ -374,31 +355,29 @@
   & a {
     color: #d61c4e;
     font-family: Onest;
-    font-size: 0, 97rem;
-    font-style: normal;
+    font-size: 0.97rem;
     font-weight: 600;
-    line-height: normal;
+
   }
 }
 
 .main_card_section {
   display: flex;
   justify-content: space-between;
-  margin: 10px 10px 0;
+  margin: 0.62rem 0.62rem 0;
   width: 96%;
 }
 
 .card_section {
+
   & h6 {
-    padding-top: 10px;
-    color: #000;
+    padding-top: 0.62rem;
     font-family: Onest;
     font-size: 0.85rem;
     font-weight: 500;
   }
 
   & p {
-    color: #000;
     font-family: Onest;
     font-size: 0.8rem;
     font-weight: 500;
@@ -413,14 +392,14 @@
   }
 
   .offer {
-    margin-left: 10px;
+    margin-left: 0.62rem;
     display: flex;
-    width: 49px;
-    height: 21px;
-    padding: 6px 14px;
+    width: 3.0rem;
+    height: 1.3rem;
+    padding: 0.37rem 0.87rem;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 0.62rem;
     border-radius: 6px;
     background: #d1ffc7;
     color: #55b440;
@@ -432,19 +411,18 @@
 
 .rating_section {
   position: relative;
-  width: 78px;
-  bottom: 43%;
-  left: 5%;
+  width: 5rem;
+  bottom: 7.8rem;
+  left: 0.62rem;
   display: flex;
-  padding: 7px 8px;
   align-items: center;
+  padding: 0.43rem 0.5rem;
   gap: 3px;
   border-radius: 7px;
   background: #fff;
 
   & p {
     margin: 0;
-    color: #000;
     font-size: 0.7rem;
     font-family: Onest;
     font-weight: 400;
@@ -460,15 +438,13 @@
 
 .card_section_2 {
   & h6 {
-    padding-top: 10px;
-    color: #000;
+    padding-top: 0.62rem;
     font-family: Onest;
     font-size: 0.85rem;
     font-weight: 500;
   }
 
   & p {
-    color: #000;
     font-family: Onest;
     font-size: 0.8rem;
     font-weight: 500;
@@ -484,9 +460,9 @@
 
   .offer {
     display: flex;
-    width: 49px;
-    height: 21px;
-    padding: 6px 14px;
+    width: 3.0rem;
+    height: 1.3rem;
+    padding: 0.37rem 0.87rem;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -501,11 +477,11 @@
 
 .rating_section_2 {
   position: relative;
-  width: 78px;
-  bottom: 43%;
-  left: 5%;
+  width: 5rem;
+  bottom: 7.8rem;
+  left: 0.62rem;
   display: flex;
-  padding: 7px 8px;
+  padding: 0.43rem 0.5rem;
   align-items: center;
   gap: 3px;
   border-radius: 7px;
@@ -513,7 +489,6 @@
 
   & p {
     margin: 0;
-    color: #000;
     font-size: 0.7rem;
     font-family: Onest;
     font-weight: 400;
@@ -530,8 +505,35 @@
 .scrollable_content {
   position: relative;
   overflow-y: scroll;
-  height: calc(100vh - 150px);
-  padding: 20px;
+  height: calc(100vh - 9.3rem);
+  padding: 1.2rem;
+}
+
+.rating_section_top{
+  position: relative;
+  width: 5rem;
+  bottom: 0.8rem;
+  left: 1.3rem;
+  display: flex;
+  padding: 0.43rem 0.5rem;
+  align-items: center;
+  gap: 3px;
+  border-radius: 7px;
+  background: #fff;
+
+  & p {
+    margin: 0;
+    font-size: 0.8rem;
+    font-family: Onest;
+    font-weight: 400;
+  }
+
+  & span {
+    color: #898989;
+    font-family: Onest;
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
 }
 
 /* --------btn-section------------ */
@@ -542,13 +544,13 @@
   border-top: 1px solid #d9d9d9;
 
   & button {
-    margin: 15px;
+    margin: 0.93rem;
     display: flex;
     width: 100%;
-    padding: 16px;
+    padding: 1rem;
     justify-content: center;
     align-items: center;
-    border-radius: 9.112px;
+    border-radius: 9px;
     border: 1px solid #d61c4e;
     background: #fff;
     color: #d61c4e;
@@ -558,10 +560,10 @@
   }
 
   & button:last-child {
-    margin: 15px;
+    margin: 0.93rem;
     display: flex;
     width: 100%;
-    padding: 16px;
+    padding: 1rem;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -580,45 +582,14 @@
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* ------for-check-------- */
+
 
 /* ------------slider-section----------- */
 
-/* .slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  .mainImage {
-    width: 200px;
-    height: auto;
-  }
-
-  .allChairs {
-    display: flex;
-    width: auto;
-    background: #fff;
-    margin-top: 20px;
-    border-radius: 5px;
-
-    .chair_img {
-      margin: 5px;
-      width: auto;
-      border: 1px solid #d9d9d9;
-      border-radius: 10px;
-
-      & img {
-        width: 55px;
-        height: 55px;
-      }
-    }
-  }
-} */
 
 .swiperContainer {
   width: 100%;
-  max-width: 600px;
+  max-width: 37.5rem;
   margin: 0 auto;
 }
 
@@ -629,25 +600,25 @@
 }
 
 .mainImage {
-  width: 200px;
+  width: 12.5rem;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 1.2rem;
 }
 
 .allChairs {
   margin: 0 auto;
   display: flex;
-  width: 200px;
+  width: 12.5rem;
   justify-content: center;
   align-items: center;
   background: #fff;
-  margin-top: 20px;
+  margin-top: 1.2rem;
   border-radius: 5px;
 }
 
 .smallImage {
-  width: 55px;
-  height: 55px;
+  width: 3.4rem;
+  height: 3.4rem;
   cursor: pointer;
   border: 2px solid transparent;
   border-radius: 5px;

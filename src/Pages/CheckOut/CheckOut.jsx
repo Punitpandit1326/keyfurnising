@@ -15,41 +15,18 @@ import HeaderClose from "../../Components/HeaderClose/HeaderClose";
 
 const CheckOut = () => {
   const [show, setShow] = useState(false);
-  // const [time, setTime] = useState(new Date());
   const navigate = useNavigate();
 
   const handleClick = () => {
     navigate(`/payment`);
   };
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setTime(new Date());
-  //   }, 1000);
-
-  //   return () => clearInterval(interval);
-  // }, []);
-
-  // const formattedTime = time.toLocaleTimeString("en-US", {
-  //   hour: "2-digit",
-  //   minute: "2-digit",
-  // });
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   return (
     <React.Fragment>
-      {/* <div className={styles.header}>
-        <p> {formattedTime}</p>
-        <div className={styles.icon}>
-          <IoMdAlarm />
-          <IoMdBluetooth />
-          <IoIosWifi />
-          <FaSignal />
-          <LuBatteryFull style={{ marginTop: "-3px" }} size={22} />
-        </div>
-      </div> */}
 
       {/* ----------main-section---------- */}
       <div className={styles.main_section}>
