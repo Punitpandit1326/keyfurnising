@@ -23,8 +23,7 @@ const Search = () => {
   };
 
   const handleKeyDown = (e) => {
-    if (
-      e.key === "Enter" && value.trim() !== "" && !searchHistory.includes(value)) {
+    if ( e.key === "Enter" && value.trim() !== "" && !searchHistory.includes(value)) {
       setSearchHistory([...searchHistory, value]);
       setValue("");
     }
@@ -40,11 +39,7 @@ const Search = () => {
       <div className={styles.main}>
         <h6>Search</h6>
         <div>
-          <input
-            type="text"
-            placeholder="Type Keywords"
-            onChange={handleInputChange}
-            onKeyDown={handleKeyDown}
+          <input type="text" placeholder="Type Keywords" onChange={handleInputChange} onKeyDown={handleKeyDown}
             value={value}
           />
           <p>Recent Search</p>
