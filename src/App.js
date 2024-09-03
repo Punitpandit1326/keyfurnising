@@ -45,6 +45,30 @@ function App() {
     return () => clearTimeout(id);
   }, []);
 
+  // useEffect(() => {
+  //   if (isPlatform("android")) {
+  //     const backButtonListener = CapacitorApp.addListener("backButton", () => {
+  //       if (location.pathname === "/" || location.pathname === "/intro") {
+  //         CapacitorApp.exitApp();
+  //       } else {
+  //         navigate(-1);
+  //       }
+  //     });
+
+  //     return () => {
+        
+  //       try {
+  //         backButtonListener?.remove();
+  //       } catch (error) {
+  //           console.log(error);
+            
+  //       }
+  //     };
+  //   }
+  // }, [location, navigate]);
+
+
+
   useEffect(() => {
     if (isPlatform("android")) {
       const backButtonListener = CapacitorApp.addListener("backButton", () => {
@@ -54,12 +78,15 @@ function App() {
           navigate(-1);
         }
       });
-
+  
       return () => {
-        backButtonListener.remove();
+        if (backButtonListener && typeof backButtonListener.remove === "function") {
+          backButtonListener.remove().catch((error) => console.log(error));
+        }
       };
     }
   }, [location, navigate]);
+  
 
   return splash ? (
     <SplashScreen />

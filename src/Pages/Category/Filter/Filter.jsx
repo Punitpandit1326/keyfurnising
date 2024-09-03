@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styles from "./filter.module.css";
 import { Offcanvas } from "react-bootstrap";
 import { BiSolidOffer } from "react-icons/bi";
@@ -25,38 +25,41 @@ const Filter = ({ show, closeModal }) => {
         onHide={closeModal}
         backdrop={true}
       >
-        <Offcanvas.Header className={styles.header}>
-          <HeaderClose title="Filters" closeModal={closeModal} />
-        </Offcanvas.Header>
+        <div className={styles.child_section}>
+          <Offcanvas.Header className={styles.header}>
+            <HeaderClose title="Filters" closeModal={closeModal} />
+          </Offcanvas.Header>
 
-        <Offcanvas.Body>
-          <div className={`${styles.scrollable_content}`}>
-            <h6>Categories</h6>
-            <div className={styles.category_section}>
-              {categories.map((category, index) => (
-                <div key={index} className={styles.categoryItem}>
-                  <span className={styles.categoryIcon}>{category.icon}</span>
-                  <span className={styles.categoryName}>{category.name}</span>
-                </div>
-              ))}
+          <Offcanvas.Body>
+            <div className={`${styles.scrollable_content}`}>
+              <h6>Categories</h6>
+              <div className={styles.category_section}>
+                {categories.map((category, index) => (
+                  <div key={index} className={styles.categoryItem}>
+                    <span className={styles.categoryIcon}>{category.icon}</span>
+                    <span className={styles.categoryName}>{category.name}</span>
+                  </div>
+                ))}
+              </div>
+              <hr />
+              <div className={styles.ranges}>
+                <h6>Price</h6>
+                <PriceRanges />
+              </div>
+              <hr />
+              <div className={styles.color}>
+                <h6>Colors</h6>
+                <Colors />
+              </div>
             </div>
-            <hr />
-            <div className={styles.ranges}>
-              <h6>Price</h6>
-              <PriceRanges />
-            </div>
-            <hr />
-            <div className={styles.color}>
-              <h6>Colors</h6>
-              <Colors />
-            </div>
-          </div>
 
-          <div className={styles.btn_section}>
-            <button>Clear All</button>
-            <button>Show 92 Products</button>
-          </div>
-        </Offcanvas.Body>
+            <div className={styles.btn_section}>
+              <button>Clear All</button>
+              <button>Show 92 Products</button>
+            </div>
+          </Offcanvas.Body>
+        </div>
+
       </Offcanvas>
     </React.Fragment>
   );

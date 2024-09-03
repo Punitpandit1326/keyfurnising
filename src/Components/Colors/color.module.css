@@ -9,7 +9,7 @@
 
 .red, .organe, .green, .sea, .yellow, .blue, .brown {
   width: 60px;            
-  height: 60px;        
+  height: 55px;        
   border-radius: 50%;
   display: inline-block;   
 }

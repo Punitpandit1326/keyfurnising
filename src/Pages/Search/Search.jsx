@@ -23,7 +23,7 @@ const Search = () => {
   };
 
   const handleKeyDown = (e) => {
-    if ( e.key === "Enter" && value.trim() !== "" && !searchHistory.includes(value)) {
+    if (e.key === "Enter" && value.trim() !== "" && !searchHistory.includes(value)) {
       setSearchHistory([...searchHistory, value]);
       setValue("");
     }
