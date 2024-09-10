@@ -61,51 +61,63 @@ const CategoryDetails = () => {
         </div>
       </div>
 
-      <div className={`${styles.scrollable_content}`}>
-        <div className={styles.slider_section}>
-          {/* ----------swiper-section--------- */}
 
-          <div className={styles.swiperContainer}>
-            <Swiper navigation={true} modules={[Navigation]} className="mySwiper"
-              onSlideChange={handleSlideChange}
-              initialSlide={activeIndex}
-              onSwiper={(swiper) => {
-                swiperRef.current = swiper;
-              }}
-            >
-              {images.map((img, index) => (
-                <SwiperSlide key={index}>
-                  <div className={styles.slider}>
-                    <img
-                      className={styles.mainImage}
-                      src={img}
-                      alt={`chair-${index}`}
-                    />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+      <div className={`${styles.scrollable_content} ${styles.content}`}>
 
-            {/* Thumbnails below the Swiper */}
-            <div className={styles.allChairs}>
-              {images.map((img, index) => (
-                <img
-                  key={index}
-                  src={img}
-                  alt={`chair-${index}`}
-                  className={`${styles.smallImage} ${
-                    activeIndex === index ? styles.active : ""
-                  }`}
-                  onClick={() => handleThumbnailClick(index)}
-                />
-              ))}
-            </div>
-          </div>
+
+      <div className={styles.slider_section}>
+        
+        {/* ----------swiper-section--------- */}
+
+        <div className={styles.swiperContainer}>
+          <Swiper
+            navigation={true}
+            modules={[Navigation]}
+            className="mySwiper"
+            onSlideChange={handleSlideChange}
+            initialSlide={activeIndex}
+            onSwiper={(swiper) => {
+              swiperRef.current = swiper;
+            }}
+          >
+            {images.map((img, index) => (
+              <SwiperSlide key={index}>
+                <div className={styles.slider}>
+                  <img
+                    className={styles.mainImage}
+                    src={img}
+                    alt={`chair-${index}`}
+                    style={
+                      index === 0 ? { height: "230px", width: "250px" } : {}
+                    }
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
+
+        {/* Thumbnails below the Swiper */}
+
+        <div className={styles.allChairs}>
+          {images.map((img, index) => (
+            <img
+              key={index}
+              src={img}
+              alt={`chair-${index}`}
+              className={`${styles.smallImage} ${
+                activeIndex === index ? styles.active : ""
+              }`}
+              onClick={() => handleThumbnailClick(index)}
+            />
+          ))}
+        </div>
+      </div>
+
 
         <div className={styles.des_section}>
           <h6> Sofa : Frank Gehry wiggle Chair </h6>
-          <div className="d-flex justify-content-between mx-2 mt-3">
+          <div className="d-flex justify-content-between">
             <div className="d-flex ">
               <p>
                 <span> ₹ 2999 </span>₹ 1999
@@ -249,7 +261,7 @@ const CategoryDetails = () => {
           <div className="d-flex ">
             <h5>Nishant Choudhary, Delhi</h5>
             <div className={styles.verfied_sec}>
-              Verified <FaCheck />
+              Verified <FaCheck size={10} />
             </div>
           </div>
 

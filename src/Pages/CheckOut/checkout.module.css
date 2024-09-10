@@ -198,15 +198,27 @@
 /* ---------canvas---------- */
 
 .drawer {
-  width: auto;
-  border-top-left-radius: 1.25rem;
-  border-top-right-radius: 1.25rem;
-  height: 31.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: normal;
+  background: color(srgb 0 0 0 / 0.36);
+  height: -webkit-fill-available;
 
   .header {
     display: inline-block !important;
     width: 100%;
     padding: 1rem 0 !important;
+  }
+
+  
+  .child_section{
+    width: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: scroll;
+    height: auto;
+    background-color: #fff;
   }
 
   .scrollable_content {

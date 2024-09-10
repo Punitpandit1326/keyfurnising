@@ -120,6 +120,7 @@ const CheckOut = () => {
           backdrop={false}
           scroll={true}
         >
+          <div className={styles.child_section}>
           <Offcanvas.Header className={styles.header}>
             <HeaderClose title="Coupon" closeModal={handleClose} />
           </Offcanvas.Header>
@@ -149,6 +150,8 @@ const CheckOut = () => {
               </div>
             </div>
           </Offcanvas.Body>
+          </div>
+
         </Offcanvas>
       </div>
     </React.Fragment>
