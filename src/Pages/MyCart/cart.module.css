@@ -15,7 +15,7 @@
     position: relative;
     overflow-y: scroll;
     height: calc(100vh - 7.5rem);
-    padding: 1.2rem 0.93rem;
+    padding: 1.2rem 0.7rem;
   }
 
   .child_section {
@@ -69,7 +69,7 @@
 
     .icon {
       position: absolute;
-      right: .62rem;
+      right: 0.62rem;
       top: 0;
       font-size: 1.2rem;
     }
@@ -88,7 +88,7 @@
     & span {
       font-family: Onest;
       font-size: 0.9rem;
-      font-weight: 400;
+      font-weight: 500;
     }
 
     & h6 {
@@ -119,6 +119,12 @@
       font-size: 0.9rem;
       font-weight: 600;
       border: none;
+    }
+
+    button:active {
+      transform: scale(0.95); 
+      opacity: 0.4;
+      background: #d61c4e;
     }
   }
 }

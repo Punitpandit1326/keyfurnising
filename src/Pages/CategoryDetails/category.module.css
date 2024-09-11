@@ -336,7 +336,7 @@
 }
 
 .product_sec {
-  margin: 1.2rem 0.62rem 0.62rem;
+  margin: 1.2rem 1rem 0.62rem;
   display: flex;
   justify-content: space-between;
 
@@ -358,8 +358,7 @@
 .main_card_section {
   display: flex;
   justify-content: space-between;
-  margin: 0.62rem 0.62rem 0;
-  width: 96%;
+  margin: 0.62rem 1rem 0;
 }
 
 .card_section {
@@ -558,6 +557,12 @@
     font-family: Onest;
     font-size: 0.7rem;
     font-weight: 600;
+  }
+
+  button:active {
+    transform: scale(0.95); 
+    opacity: 0.4;
+    background: #d61c4e;
   }
 
   & button:last-child {

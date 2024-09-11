@@ -13,7 +13,7 @@ const Header = ({ title, subtittle }) => {
   return (
     <header className={styles.header}>
       <h6>
-        <SlArrowLeft onClick={handleClick} /> {title}{" "}
+        <SlArrowLeft size={12} onClick={handleClick} /> {title}{" "}
       </h6>
       
     </header>

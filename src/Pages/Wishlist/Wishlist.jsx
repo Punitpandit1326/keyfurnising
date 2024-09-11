@@ -8,11 +8,16 @@ import Footer from "../../Components/Footer/Footer";
 
 const Wishlist = () => {
   const navigate = useNavigate();
+  // const [isActive, setIsActive] = useState(false);
   const [activeTab, setActiveTab] = useState("All");
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
+
+  // const handleClick = () => {
+  //   setIsActive(!isActive);
+  // };
 
   return (
     <React.Fragment>
@@ -28,7 +33,7 @@ const Wishlist = () => {
           <p
             onClick={() => handleTabClick("All")}
             style={{
-              color: activeTab === "All" ? "black" : "silver",
+              color: activeTab === "All" ? "#000" : "#e3e3e3",
             }}
           >
             All
@@ -36,7 +41,7 @@ const Wishlist = () => {
           <p
             onClick={() => handleTabClick("Raw")}
             style={{
-              color: activeTab === "Raw" ? "black" : "silver",
+              color: activeTab === "Raw" ? "#000" : "#e3e3e3",
             }}
           >
             Raw
@@ -44,7 +49,7 @@ const Wishlist = () => {
           <p
             onClick={() => handleTabClick("Chair")}
             style={{
-              color: activeTab === "Chair" ? "black" : "silver",
+              color: activeTab === "Chair" ? "#000" : "#e3e3e3",
             }}
           >
             Chair
@@ -52,7 +57,7 @@ const Wishlist = () => {
           <p
             onClick={() => handleTabClick("Curtain")}
             style={{
-              color: activeTab === "Curtain" ? "black" : "silver",
+              color: activeTab === "Curtain" ? "#000" : "#e3e3e3",
             }}
           >
             Curtain
@@ -64,10 +69,11 @@ const Wishlist = () => {
             <div className={styles.main_section}>
               {/* ---------1st-------- */}
 
-              <div className="d-flex gap-3">
+              <div className="d-flex gap-4">
                 <div>
                   <div className={styles.card_section}>
                     <img src="/images/sofa.png" alt="sofa" />
+                    <FaHeart className={styles.heart_icon_first} />
                     <h6>Modern Sofa : Frank Gehry wiggle Chair </h6>
                     <div className="d-flex gap-2">
                       <p>
@@ -90,6 +96,7 @@ const Wishlist = () => {
                 <div>
                   <div className={styles.card_section_2}>
                     <img src="/images/sofa-3.png" alt="sofa" />
+                    <FaHeart className={styles.heart_icon} />
                     <h6>Modern Sofa : Frank Gehry wiggle Chair </h6>
                     <div className="d-flex gap-2">
                       <p>
@@ -100,6 +107,7 @@ const Wishlist = () => {
                   </div>
                   <div className={styles.rating_section_2}>
                     <img src="/images/star.png" alt="star" />
+                    
                     <p>
                       4.5 <span>(45)</span>
                     </p>
@@ -112,7 +120,7 @@ const Wishlist = () => {
 
               {/* ---------2st-------- */}
 
-              <div className="d-flex gap-3">
+              <div className="d-flex gap-4">
                 <div>
                   <div className={`${styles.card_section} ${styles.card3}`}>
                     <img src="/images/sofa.png" alt="sofa" />

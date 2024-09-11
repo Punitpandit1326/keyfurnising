@@ -47,7 +47,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 
     & button {
       margin: 0;
@@ -64,6 +64,12 @@
       font-size: 0.9rem;
       font-weight: 600;
       border: none;
+    }
+
+    button:active {
+      transform: scale(0.95); 
+      opacity: 0.4;
+      background: #d61c4e;
     }
 
     & a {
