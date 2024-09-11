@@ -7,7 +7,7 @@ import { FaRegBell, FaCouch } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { MdOutlineCurtainsClosed } from "react-icons/md";
 import { HiOutlineGlobeAsiaAustralia } from "react-icons/hi2";
-
+import './home.css'
 import "swiper/css";
 import "swiper/css/pagination";
 

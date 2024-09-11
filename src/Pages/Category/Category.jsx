@@ -64,7 +64,7 @@ const[show, setShow] = useState(false)
           <h6>Products</h6>
           <hr style={{ color: "#d9d9d9", height: "2px" }} />
 
-          <div className="d-flex gap-3">
+          <div className="d-flex gap-4">
             <div onClick={handleClick}>
               <div className={styles.card_section}>
                 <img src="/images/sofa.png" alt="sofa" />
@@ -104,7 +104,7 @@ const[show, setShow] = useState(false)
             </div>
           </div>
 
-          <div className="d-flex gap-3">
+          <div className="d-flex gap-4">
             <div onClick={handleClick}>
               <div className={styles.card_section_3}>
                 <img src="/images/sofa-3.png" alt="sofa" />

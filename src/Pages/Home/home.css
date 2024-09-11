@@ -1,0 +1,6 @@
+.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    left: 50%;
+    top: 62%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
