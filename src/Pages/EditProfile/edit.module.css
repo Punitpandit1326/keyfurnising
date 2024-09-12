@@ -100,5 +100,11 @@
       border: 1px solid #d61c4e;
       background: #d61c4e;
     }
+
+    button:active {
+      transform: scale(0.95); 
+      opacity: 0.4;
+      background: #d61c4e;
+    }
   }
 }

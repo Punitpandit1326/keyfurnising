@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from "react";
 import styles from "./checkout.module.css";
-import { IoIosWifi, IoMdAlarm, IoMdBluetooth, IoMdClose } from "react-icons/io";
-import { FaSignal } from "react-icons/fa";
-import { LuBatteryFull } from "react-icons/lu";
 import ValueBox from "../../Components/Valuebox/Valuebox";
 import { Link, useNavigate } from "react-router-dom";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
-
 import { Offcanvas } from "react-bootstrap";
 import { BiSolidOffer } from "react-icons/bi";
+import CheckCanvas from "./CheckCanvas/CheckCanvas";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import HeaderClose from "../../Components/HeaderClose/HeaderClose";
+import { IoIosWifi, IoMdAlarm, IoMdBluetooth, IoMdClose } from "react-icons/io";
 
 const CheckOut = () => {
   const [show, setShow] = useState(false);
@@ -21,14 +19,17 @@ const CheckOut = () => {
     navigate(`/payment`);
   };
 
-
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = (event) => {
+    event.preventDefault();
+    setShow(true);
+  };
 
   return (
     <React.Fragment>
 
       {/* ----------main-section---------- */}
+      
       <div className={styles.main_section}>
         <Header title="Checkout" />
 
@@ -75,7 +76,8 @@ const CheckOut = () => {
               <p>Enter coupon code or gift card</p>
               <span>Apply</span>
             </div>
-            <Link to={""} onClick={handleShow}>
+            <CheckCanvas show={show} closeModal={handleClose}/>
+            <Link to={"#"} onClick={handleShow}>
               View All Coupons <MdOutlineKeyboardArrowRight />
             </Link>
             <hr style={{ color: "#d9d9d9", height: "2px" }} />
@@ -111,48 +113,6 @@ const CheckOut = () => {
 
         {/* --------canvas------ */}
 
-        <Offcanvas
-          className={styles.drawer}
-          placement="bottom"
-          show={show}
-          onHide={handleClose}
-          enforceFocus={false}
-          backdrop={false}
-          scroll={true}
-        >
-          <div className={styles.child_section}>
-          <Offcanvas.Header className={styles.header}>
-            <HeaderClose title="Coupon" closeModal={handleClose} />
-          </Offcanvas.Header>
-
-          <Offcanvas.Body>
-            <div className={`${styles.scrollable_content}`}>
-              <div className={styles.box}>
-                <h6>WELCOME200</h6>
-                <p>Add items worth ₹500 to unlock</p>
-                <div className={styles.off}>
-                  <BiSolidOffer className="text-danger" /> Get Upto 50% OFF{" "}
-                </div>
-                <div className={styles.code}>
-                  <h6>Apply Code</h6>
-                </div>
-              </div>
-
-              <div className={styles.box}>
-                <h6>WELCOME200</h6>
-                <p>Add items worth ₹500 to unlock</p>
-                <div className={styles.off}>
-                  <BiSolidOffer className="text-danger" /> Get Upto 50% OFF{" "}
-                </div>
-                <div className={styles.code}>
-                  <h6>Apply Code</h6>
-                </div>
-              </div>
-            </div>
-          </Offcanvas.Body>
-          </div>
-
-        </Offcanvas>
       </div>
     </React.Fragment>
   );

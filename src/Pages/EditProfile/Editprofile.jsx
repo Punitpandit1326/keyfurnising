@@ -47,7 +47,7 @@ const Editprofile = () => {
               <Form.Control type="email" placeholder="Nishu12364@gmail.com" />
             </Form.Group>
 
-            <Button variant="primary"> Save Reply</Button>
+            <Button variant="primary"> Save Profile</Button>
           </Form>
         </div>
       </div>

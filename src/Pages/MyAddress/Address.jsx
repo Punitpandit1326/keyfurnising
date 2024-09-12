@@ -13,7 +13,7 @@ const Address = () => {
     <React.Fragment>
       <div className={styles.head_section}>
         <h6>
-          <SlArrowLeft onClick={() => navigate(-1)} /> My Address
+          <SlArrowLeft className={styles.icon_navigation} onClick={() => navigate(-1)} /> My Address
         </h6>
         <span>
           <CgAddR onClick={() => navigate(`/addaddress`) } className={styles.icon} />
@@ -24,7 +24,7 @@ const Address = () => {
         <div className={styles.main_section}>
           <h6>Saved Address</h6>
           <div className={styles.box}>
-            <GoHome />
+            <GoHome size={18} />
             <h6>Home</h6>
             <p>
               Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -39,7 +39,7 @@ const Address = () => {
           </div>
 
           <div className={styles.box}>
-            <IoLocationSharp />
+            <IoLocationSharp size={18} />
             <h6>Other</h6>
             <p>
               Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -54,7 +54,7 @@ const Address = () => {
           </div>
 
           <div className={styles.box}>
-            <PiBriefcaseFill />
+            <PiBriefcaseFill size={18}/>
             <h6>Office</h6>
             <p>
               Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -69,7 +69,7 @@ const Address = () => {
           </div>
 
           <div className={styles.box}>
-            <PiBriefcaseFill />
+            <PiBriefcaseFill size={18} />
             <h6>Office</h6>
             <p>
               Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc

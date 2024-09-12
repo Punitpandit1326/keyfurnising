@@ -1,14 +1,14 @@
 .scrollable_content {
   width: 100%;
   position: relative;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   height: calc(100vh - 120px);
   padding: 20px;
 
   /* ChatBox.module.css */
 
   .chatWindow {
-    height: auto;
+    height: 95%;
     overflow-y: auto;
     margin-bottom: 10px;
     padding: 10px;

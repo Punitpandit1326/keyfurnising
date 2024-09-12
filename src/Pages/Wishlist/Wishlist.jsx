@@ -23,7 +23,7 @@ const Wishlist = () => {
     <React.Fragment>
       <div className={styles.head_section}>
         <h6>
-          <SlArrowLeft onClick={() => navigate(-1)} /> Wishlist
+          <SlArrowLeft className={styles.icon_navigation} onClick={() => navigate(-1)} /> Wishlist
         </h6>
         <p>Remove All</p>
       </div>
@@ -69,7 +69,7 @@ const Wishlist = () => {
             <div className={styles.main_section}>
               {/* ---------1st-------- */}
 
-              <div className="d-flex gap-4">
+              <div className={styles.main_card_sec}>
                 <div>
                   <div className={styles.card_section}>
                     <img src="/images/sofa.png" alt="sofa" />
@@ -120,7 +120,7 @@ const Wishlist = () => {
 
               {/* ---------2st-------- */}
 
-              <div className="d-flex gap-4">
+              <div className={`mt-4 ${styles.main_card_sec}`}>
                 <div>
                   <div className={`${styles.card_section} ${styles.card3}`}>
                     <img src="/images/sofa.png" alt="sofa" />

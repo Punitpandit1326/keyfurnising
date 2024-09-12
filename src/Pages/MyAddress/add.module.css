@@ -18,6 +18,18 @@
     font-weight: 500;
     cursor: pointer;
   }
+
+  .icon_navigation{
+    font-size: .8rem;
+    font-weight: 500;
+    margin-top: -0.2rem;
+  }
+
+  .icon_navigation:active {
+    transform: scale(0.95); 
+    opacity: 0.4;
+    color: #817c7e;
+  }
 }
 
 .scrollable_content {

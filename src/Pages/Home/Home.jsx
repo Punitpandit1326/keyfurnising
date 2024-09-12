@@ -7,16 +7,13 @@ import { FaRegBell, FaCouch } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { MdOutlineCurtainsClosed } from "react-icons/md";
 import { HiOutlineGlobeAsiaAustralia } from "react-icons/hi2";
-import './home.css'
+import "./home.css";
 import "swiper/css";
 import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 import { Link, useNavigate } from "react-router-dom";
 import Footer from "../../Components/Footer/Footer";
-
-
-
 
 const Home = () => {
   const navigate = useNavigate();
@@ -27,10 +24,9 @@ const Home = () => {
     { name: "Interior", icon: <FaCouch /> },
   ];
 
-
-const handleClick = () => {
-  navigate(`/cart`)
-}
+  const handleClick = () => {
+    navigate(`/cart`);
+  };
 
   return (
     <React.Fragment>
@@ -40,7 +36,10 @@ const handleClick = () => {
         </h6>
         <div className={styles.child_img}>
           <LuShoppingBag onClick={handleClick} className={styles.icon} />
-          <FaRegBell onClick={() => navigate(`/notification`)} className={styles.icon} />
+          <FaRegBell
+            onClick={() => navigate(`/notification`)}
+            className={styles.icon}
+          />
         </div>
       </div>
 
@@ -101,20 +100,18 @@ const handleClick = () => {
         </div>
 
         <div className={styles.overlay_section}>
-          <img src="/images/mat.png" alt="mat" />
+          <img src="/images/frame 14.png" alt="mat" />
         </div>
-
-        <div className={styles.overlay}>
+        {/*    <div className={styles.overlay}>
           <h6>Upholstery Fabric</h6>
           <p>Torem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
 
-        <div className={styles.off}>10% OFF</div>
+        <div className={styles.off}>10% OFF</div> */}
+
+        {/* ----------card-section--------- */}
 
         <div className={styles.product_section}>
-          
-          {/* ----------card-section--------- */}
-
           <div className={styles.child}>
             <p>Luxury : Chairs</p>
             <Link to={""}>View all</Link>
@@ -263,10 +260,6 @@ const handleClick = () => {
 
         <Footer />
       </div>
-
-    
-
-
     </React.Fragment>
   );
 };

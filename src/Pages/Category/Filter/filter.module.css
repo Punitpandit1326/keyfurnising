@@ -2,8 +2,6 @@
   background-color: rgba(0, 0, 0, 0.5) !important; /* Adjust opacity as needed */
 }
 
-
-
 .drawer {
   display: flex;
     flex-direction: column;
@@ -113,13 +111,13 @@
       display: flex;
       width: 100%;
       padding: 16px;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
       border: none;
       background: #fff;
       color: #d61c4e;
       font-family: Onest;
-      font-size: 0.7rem;
+      font-size: 0.9rem;
       font-weight: 600;
     }
 
@@ -131,6 +129,7 @@
       justify-content: center;
       align-items: center;
       border-radius: 10px;
+      font-size: 0.8rem;
       background: #d61c4e;
       color: #fff;
     }

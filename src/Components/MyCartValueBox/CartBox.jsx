@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ValueBox = () => {
+const CartBox = () => {
   const [value, setValue] = useState(0);
 
   const handleIncrease = () => {
@@ -32,12 +32,13 @@ const ValueBox = () => {
           width: "22px",
           marginRight: "10px",
           border: "none",
+          marginTop: '-5px',
           fontFamily: "Onest",
           fontSize: ".9rem"
         }}
       />
       <h2
-        style={{ fontSize: "1.2rem", marginTop: "8px" }}
+        style={{ fontSize: "1.5rem", marginTop: "12px" }}
         onClick={handleIncrease}
       >
         +
@@ -46,4 +47,4 @@ const ValueBox = () => {
   );
 };
 
-export default ValueBox;
+export default CartBox;

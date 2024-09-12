@@ -61,7 +61,11 @@
         height: 3.1rem;
         background: #d61c4e;
       }
-      
+      button:active {
+        transform: scale(0.95); 
+        opacity: 0.4;
+        background: #d61c4e;
+      }
     
   }
 }

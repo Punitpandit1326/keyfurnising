@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./footer.module.css";
 import { useNavigate } from "react-router-dom";
 
@@ -6,10 +6,23 @@ const Footer = () => {
   const [activeItem, setActiveItem] = useState("home");
   const navigate = useNavigate();
 
+  useEffect(() => {
+    console.log("Active item changed to:", activeItem);
+  }, []); 
+
   const handleItemClick = (item) => {
     setActiveItem(item);
     navigate(`/${item}`);
+    console.log(`${item}`)
   };
+
+  useEffect(() => {
+    console.log('Component re-rendered');
+  })
+
+  useEffect(() => {
+    console.log("Active item changed to:", activeItem);
+  }, [activeItem]); // Track activeItem changes
 
   return (
     <div className={`${styles.footer_bottom} ${styles.fixed_footer}`}>
@@ -56,3 +69,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

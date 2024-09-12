@@ -30,7 +30,7 @@
   }
 
   .form_section {
-    margin: 1.2rem 0;
+    margin: 1.2rem 0 0;
 
     & input {
       height: 2.8rem;
@@ -49,6 +49,11 @@
       color: #fff;
       border: none;
       height: 3.1rem;
+      background: #d61c4e;
+    }
+    button:active {
+      transform: scale(0.95); 
+      opacity: 0.4;
       background: #d61c4e;
     }
   }

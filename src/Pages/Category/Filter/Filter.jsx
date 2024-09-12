@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./filter.module.css";
 import { Offcanvas } from "react-bootstrap";
-import { BiSolidOffer } from "react-icons/bi";
 import HeaderClose from "../../../Components/HeaderClose/HeaderClose";
 import { HiOutlineGlobeAsiaAustralia } from "react-icons/hi2";
 import { MdOutlineCurtainsClosed } from "react-icons/md";

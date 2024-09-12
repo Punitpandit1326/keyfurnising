@@ -59,7 +59,7 @@ const ProductReturn2 = () => {
             <h6>Apt. 453 52466 Kimberlie Trail,IL 70724</h6>
             <h6>7503063585</h6>
           </div>
-          <Link to={""}>Change Adress</Link>
+          <Link to={"/myaddress"}>Change Adress</Link>
         </div>
 
         <button>Refund</button>

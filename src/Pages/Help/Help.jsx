@@ -30,7 +30,7 @@ const Help = () => {
             </div>
           </div>
 
-          <span>
+          <span className="mt-2">
             <MdKeyboardArrowRight style={{ color: "#d9d9d9" }} size={26} />
           </span>
         </div>
@@ -50,7 +50,7 @@ const Help = () => {
           </div>
 
           <span>
-            <MdKeyboardArrowRight style={{ color: "#d9d9d9" }} size={26} />
+            <MdKeyboardArrowRight className="mt-2" style={{ color: "#d9d9d9" }} size={26} />
           </span>
         </div>
 

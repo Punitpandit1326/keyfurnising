@@ -41,7 +41,7 @@
     .offer {
       display: flex;
       width: 3.06rem;
-      height: 1.31;
+      height: 1.31rem;
       padding: 0.37rem 0.87rem;
       justify-content: center;
       align-items: center;
@@ -68,7 +68,7 @@
       font-family: Onest;
       font-size: 1rem;
       font-weight: 500;
-      padding-bottom: .62rem;
+      padding-bottom: 0.62rem;
     }
 
     & select {
@@ -84,7 +84,7 @@
   }
 
   button {
-    position: fixed; 
+    position: fixed;
     bottom: 1.2rem;
     left: 1.2rem;
     margin: 0;
@@ -99,5 +99,10 @@
     height: 3.1rem;
     background: #d61c4e;
   }
-  
+
+  button:active {
+    transform: scale(0.95);
+    opacity: 0.4;
+    background: #d61c4e;
+  }
 }

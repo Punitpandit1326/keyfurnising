@@ -7,10 +7,30 @@ import Header from "../../Components/Header/Header";
 const Coupon = () => {
   const codeRef = useRef(null);
 
+  // const handleCopyCode = () => {
+  //   const codeText = codeRef.current.innerText;
+  //   navigator?.clipboard?.writeText(codeText)?.then(() => { alert(`Code "${codeText}" copied to clipboard!`)});
+    
+  // };
+
+
   const handleCopyCode = () => {
-    const codeText = codeRef.current.innerText;
-    navigator.clipboard.writeText(codeText).then(() => { alert(`Code "${codeText}" copied to clipboard!`)});
+    if (navigator.clipboard) {
+      const codeText = codeRef.current ? codeRef.current.innerText : '';
+      if (codeText) {
+        navigator.clipboard.writeText(codeText).then(() => {
+          alert(`Code "${codeText}" copied to clipboard!`);
+        }).catch((err) => {
+          console.error('Failed to copy text: ', err);
+        });
+      } else {
+        alert('No text available to copy.');
+      }
+    } else {
+      alert('Clipboard API not supported.');
+    }
   };
+  
   return (
     <React.Fragment>
       <Header title="Coupons" />

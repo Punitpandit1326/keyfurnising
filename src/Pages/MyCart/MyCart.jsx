@@ -3,8 +3,8 @@ import styles from "./cart.module.css";
 import { IoMdClose } from "react-icons/io";
 import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
-import ValueBox from "../../Components/Valuebox/Valuebox";
 import { useNavigate } from "react-router-dom";
+import CartBox from "../../Components/MyCartValueBox/CartBox";
 
 const MyCart = () => {
   const navigate = useNavigate();
@@ -29,7 +29,7 @@ const MyCart = () => {
                   <h6>Frank Gehry wiggle Chair</h6>
                   <span>Product Category</span>
                   <div className="d-flex justify-content-between">
-                    <ValueBox />
+                    <CartBox />
                     <p>₹ 2999</p>
                   </div>
                 </div>
@@ -44,7 +44,7 @@ const MyCart = () => {
                   <h6>Frank Gehry wiggle Chair</h6>
                   <span>Product Category</span>
                   <div className="d-flex justify-content-between">
-                    <ValueBox />
+                    <CartBox />
                     <p>₹ 2999</p>
                   </div>
                 </div>
@@ -59,7 +59,7 @@ const MyCart = () => {
                   <h6>Frank Gehry wiggle Chair</h6>
                   <span>Product Category</span>
                   <div className="d-flex justify-content-between">
-                    <ValueBox />
+                    <CartBox />
                     <p>₹ 2999</p>
                   </div>
                 </div>
