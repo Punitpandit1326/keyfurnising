@@ -1,41 +1,43 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import styles from "./footer.module.css";
 import { useNavigate } from "react-router-dom";
+import { ActiveContext } from "../../context/ActiveContext";
 
 const Footer = () => {
-  const [activeItem, setActiveItem] = useState("home");
+  // const [activeItem, setActiveItem] = useState("home");
+  const { activeMenu, setActiveMenu } = useContext(ActiveContext);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    console.log("Active item changed to:", activeItem);
-  }, []); 
+  // useEffect(() => {
+  //   console.log("Active item changed to:", activeMenu);
+  // }, []);
 
   const handleItemClick = (item) => {
-    setActiveItem(item);
+    setActiveMenu(item);
     navigate(`/${item}`);
-    console.log(`${item}`)
+    console.log(`item active is ${item}`);
   };
 
-  useEffect(() => {
-    console.log('Component re-rendered');
-  })
+  // useEffect(() => {
+  //   console.log("Component re-rendered");
+  // });
 
-  useEffect(() => {
-    console.log("Active item changed to:", activeItem);
-  }, [activeItem]); // Track activeItem changes
+  // useEffect(() => {
+  //   console.log("Active item changed to:", activeItem);
+  // }, [activeItem]); // Track activeItem changes
 
   return (
     <div className={`${styles.footer_bottom} ${styles.fixed_footer}`}>
       <div
         onClick={() => handleItemClick("home")}
-        className={activeItem === "home" ? styles.active : ""}
+        className={activeMenu === "home" ? styles.active : ""}
       >
         <img src="/images/home.png" alt="home" />
         <p>Home</p>
       </div>
       <div
         onClick={() => handleItemClick("search")}
-        className={activeItem === "search" ? styles.active : ""}
+        className={activeMenu === "search" ? styles.active : ""}
       >
         <img src="/images/search.png" alt="search" />
         <p>Search</p>
@@ -43,7 +45,7 @@ const Footer = () => {
 
       <div
         onClick={() => handleItemClick("wishlist")}
-        className={activeItem === "wishlist" ? styles.active : ""}
+        className={activeMenu === "wishlist" ? styles.active : ""}
       >
         <img className="ms-1" src="/images/Heart.png" alt="heart" />
         <p>Wishlist</p>
@@ -51,7 +53,7 @@ const Footer = () => {
 
       <div
         onClick={() => handleItemClick("cart")}
-        className={activeItem === "cart" ? styles.active : ""}
+        className={activeMenu === "cart" ? styles.active : ""}
       >
         <img src="/images/bag.png" alt="bag" />
         <p>Bag</p>
@@ -59,7 +61,7 @@ const Footer = () => {
 
       <div
         onClick={() => handleItemClick("profile")}
-        className={activeItem === "profile" ? styles.active : ""}
+        className={activeMenu === "profile" ? styles.active : ""}
       >
         <img src="/images/profile.png" alt="profile" />
         <p>Profile</p>
@@ -69,4 +71,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

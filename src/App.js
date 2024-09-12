@@ -32,6 +32,7 @@ import TroublePage from "./Pages/TroublePage/TroublePage";
 import Search from "./Pages/Search/Search";
 import MyCart from "./Pages/MyCart/MyCart";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { ActiveContextProvider } from "./context/ActiveContext";
 
 function App() {
   const [splash, setSplash] = useState(true);
@@ -94,6 +95,7 @@ function App() {
   ) : (
     <TransitionGroup>
       <CSSTransition key={location.key} classNames="fade" timeout={300}>
+        <ActiveContextProvider>
     <Routes>
       <Route path="/" element={<Intro />} />
       <Route path="/login" element={<Login />} />
@@ -123,6 +125,7 @@ function App() {
       <Route path="/notification" element={<Notification />} />
       <Route path="/search" element={<Search />} />
     </Routes>
+    </ActiveContextProvider>
     </CSSTransition>
     </TransitionGroup>
   );
